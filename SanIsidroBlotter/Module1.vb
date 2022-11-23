@@ -40,43 +40,41 @@ Module Module1
     '    End Try
     'End Sub
 
-    'Public Sub reload(ByVal sql As String, ByVal dtg As Object)
-    '    Try
-    '        dt = New DataTable
-    '        strcon.Open()
-    '        With cmd                            'call data
-    '            .Connection = strcon
-    '            .CommandText = sql
-    '        End With
-    '        da.SelectCommand = cmd
-    '        da.Fill(dt)
+    Public Sub reload(ByVal sql As String, ByVal dtg As Object)
+        Try
+            dt = New DataTable
+            strcon.Open()
+            With cmd                            'call data
+                .Connection = strcon
+                .CommandText = sql
+            End With
+            da.SelectCommand = cmd
+            da.Fill(dt)
 
 
-    '        dtg.datasource = dt
+            dtg.datasource = dt
 
-    '        With dtg
-    '            .datasource = dt
-    '            .columns(0).headertext = "product code"
-    '            .columns(1).headertext = "product name"
-    '            .columns(2).headertext = "category"
-    '            .columns(3).headertext = "quantity"
-    '            .columns(4).headertext = "size"
-    '            .columns(5).headertext = "price"
-    '            .columns(0).width = 85
-    '            .columns(1).width = 85
-    '            .columns(2).width = 50
-    '            .columns(3).width = 50
-    '            .columns(4).width = 50
-    '            .columns(5).width = 50
-    '        End With
-    '    Catch ex As Exception
-    '        MessageBox.Show(ex.Message)
-    '    Finally
-    '        strcon.Close()
-    '        da.Dispose()
+            With dtg
+                .datasource = dt
+                .columns(0).headertext = "Entry ID"
+                .columns(1).headertext = "Incident type"
+                .columns(2).headertext = "Incident Location"
+                .columns(3).headertext = "Incident Date"
+                .columns(4).headertext = "Complainant"
+                .Columns(0).Width = 40
+                .Columns(1).Width = 70
+                .Columns(2).Width = 70
+                .Columns(3).Width = 70
+                .Columns(4).Width = 100
+            End With
+        Catch ex As Exception
+            MessageBox.Show(ex.Message)
+        Finally
+            strcon.Close()
+            da.Dispose()
 
-    '    End Try
-    'End Sub
+        End Try
+    End Sub
 
     'Public Sub reloadsales(ByVal sql As String, ByVal dtg As Object)
     '    Try

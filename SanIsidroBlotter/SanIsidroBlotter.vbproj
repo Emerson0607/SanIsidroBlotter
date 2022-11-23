@@ -236,6 +236,9 @@
     <EmbeddedResource Include="CreateAgree.resx">
       <DependentUpon>CreateAgree.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CreateBlotter.resx">
+      <DependentUpon>CreateBlotter.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="editAgree.resx">
       <DependentUpon>editAgree.vb</DependentUpon>
     </EmbeddedResource>

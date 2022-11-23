@@ -67,7 +67,7 @@ Partial Class viewAgree
         Me.GBinci.Controls.Add(Me.GBdate)
         Me.GBinci.Controls.Add(Me.GBid)
         Me.GBinci.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.28571!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GBinci.Location = New System.Drawing.Point(-16, 22)
+        Me.GBinci.Location = New System.Drawing.Point(15, 12)
         Me.GBinci.Name = "GBinci"
         Me.GBinci.Size = New System.Drawing.Size(1095, 221)
         Me.GBinci.TabIndex = 17
@@ -253,7 +253,7 @@ Partial Class viewAgree
         Me.GBvicdetail.BackColor = System.Drawing.Color.White
         Me.GBvicdetail.Controls.Add(Me.GBagree)
         Me.GBvicdetail.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.28571!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GBvicdetail.Location = New System.Drawing.Point(-16, 262)
+        Me.GBvicdetail.Location = New System.Drawing.Point(15, 252)
         Me.GBvicdetail.Name = "GBvicdetail"
         Me.GBvicdetail.Size = New System.Drawing.Size(1095, 435)
         Me.GBvicdetail.TabIndex = 19
@@ -264,10 +264,15 @@ Partial Class viewAgree
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1062, 700)
+        Me.BackColor = System.Drawing.Color.White
+        Me.ClientSize = New System.Drawing.Size(1122, 753)
         Me.Controls.Add(Me.GBinci)
         Me.Controls.Add(Me.GBvicdetail)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
+        Me.MaximizeBox = False
+        Me.MinimizeBox = False
         Me.Name = "viewAgree"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "viewAgree"
         Me.GBinci.ResumeLayout(False)
         Me.GBwitness.ResumeLayout(False)

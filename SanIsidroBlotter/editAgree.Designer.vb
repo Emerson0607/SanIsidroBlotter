@@ -25,7 +25,7 @@ Partial Class editAgree
         Me.TBagree = New System.Windows.Forms.TextBox()
         Me.GBvicdetail = New System.Windows.Forms.GroupBox()
         Me.GBagree = New System.Windows.Forms.GroupBox()
-        Me.BTsubmit = New System.Windows.Forms.Button()
+        Me.btnSave = New System.Windows.Forms.Button()
         Me.TBid = New System.Windows.Forms.TextBox()
         Me.GBid = New System.Windows.Forms.GroupBox()
         Me.DTagreement = New System.Windows.Forms.DateTimePicker()
@@ -70,7 +70,7 @@ Partial Class editAgree
         Me.GBvicdetail.BackColor = System.Drawing.Color.White
         Me.GBvicdetail.Controls.Add(Me.GBagree)
         Me.GBvicdetail.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.28571!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GBvicdetail.Location = New System.Drawing.Point(41, 250)
+        Me.GBvicdetail.Location = New System.Drawing.Point(12, 252)
         Me.GBvicdetail.Name = "GBvicdetail"
         Me.GBvicdetail.Size = New System.Drawing.Size(1095, 435)
         Me.GBvicdetail.TabIndex = 16
@@ -88,16 +88,16 @@ Partial Class editAgree
         Me.GBagree.TabStop = False
         Me.GBagree.Text = "Ageement Details"
         '
-        'BTsubmit
+        'btnSave
         '
-        Me.BTsubmit.FlatStyle = System.Windows.Forms.FlatStyle.System
-        Me.BTsubmit.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.10084!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BTsubmit.Location = New System.Drawing.Point(514, 691)
-        Me.BTsubmit.Name = "BTsubmit"
-        Me.BTsubmit.Size = New System.Drawing.Size(156, 63)
-        Me.BTsubmit.TabIndex = 15
-        Me.BTsubmit.Text = "Save"
-        Me.BTsubmit.UseVisualStyleBackColor = True
+        Me.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.System
+        Me.btnSave.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.10084!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnSave.Location = New System.Drawing.Point(1010, 693)
+        Me.btnSave.Name = "btnSave"
+        Me.btnSave.Size = New System.Drawing.Size(100, 50)
+        Me.btnSave.TabIndex = 15
+        Me.btnSave.Text = "Save"
+        Me.btnSave.UseVisualStyleBackColor = True
         '
         'TBid
         '
@@ -265,7 +265,7 @@ Partial Class editAgree
         Me.GBinci.Controls.Add(Me.GBdate)
         Me.GBinci.Controls.Add(Me.GBid)
         Me.GBinci.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.28571!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GBinci.Location = New System.Drawing.Point(41, 10)
+        Me.GBinci.Location = New System.Drawing.Point(12, 12)
         Me.GBinci.Name = "GBinci"
         Me.GBinci.Size = New System.Drawing.Size(1095, 221)
         Me.GBinci.TabIndex = 14
@@ -276,12 +276,17 @@ Partial Class editAgree
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1177, 764)
+        Me.BackColor = System.Drawing.Color.White
+        Me.ClientSize = New System.Drawing.Size(1122, 753)
         Me.Controls.Add(Me.GBvicdetail)
-        Me.Controls.Add(Me.BTsubmit)
+        Me.Controls.Add(Me.btnSave)
         Me.Controls.Add(Me.GBinci)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
+        Me.MaximizeBox = False
+        Me.MinimizeBox = False
         Me.Name = "editAgree"
-        Me.Text = "editAgree"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
+        Me.Text = "Edit Aggreement"
         Me.GBvicdetail.ResumeLayout(False)
         Me.GBagree.ResumeLayout(False)
         Me.GBagree.PerformLayout()
@@ -308,7 +313,7 @@ Partial Class editAgree
     Friend WithEvents TBagree As TextBox
     Friend WithEvents GBvicdetail As GroupBox
     Friend WithEvents GBagree As GroupBox
-    Friend WithEvents BTsubmit As Button
+    Friend WithEvents btnSave As Button
     Friend WithEvents TBid As TextBox
     Friend WithEvents GBid As GroupBox
     Friend WithEvents DTagreement As DateTimePicker

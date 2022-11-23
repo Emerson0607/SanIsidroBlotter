@@ -63,6 +63,19 @@ Partial Class viewBlotter
         Me.GroupBox14 = New System.Windows.Forms.GroupBox()
         Me.TextBox11 = New System.Windows.Forms.TextBox()
         Me.GroupBox12 = New System.Windows.Forms.GroupBox()
+        Me.GroupBox22 = New System.Windows.Forms.GroupBox()
+        Me.GroupBox23 = New System.Windows.Forms.GroupBox()
+        Me.TextBox14 = New System.Windows.Forms.TextBox()
+        Me.GroupBox24 = New System.Windows.Forms.GroupBox()
+        Me.DateTimePicker4 = New System.Windows.Forms.DateTimePicker()
+        Me.GroupBox25 = New System.Windows.Forms.GroupBox()
+        Me.TextBox15 = New System.Windows.Forms.TextBox()
+        Me.GroupBox26 = New System.Windows.Forms.GroupBox()
+        Me.TextBox16 = New System.Windows.Forms.TextBox()
+        Me.GroupBox27 = New System.Windows.Forms.GroupBox()
+        Me.ComboBox3 = New System.Windows.Forms.ComboBox()
+        Me.GroupBox28 = New System.Windows.Forms.GroupBox()
+        Me.TextBox17 = New System.Windows.Forms.TextBox()
         Me.GroupBox10.SuspendLayout()
         Me.GroupBox11.SuspendLayout()
         Me.GroupBox13.SuspendLayout()
@@ -85,6 +98,13 @@ Partial Class viewBlotter
         Me.GroupBox8.SuspendLayout()
         Me.GroupBox14.SuspendLayout()
         Me.GroupBox12.SuspendLayout()
+        Me.GroupBox22.SuspendLayout()
+        Me.GroupBox23.SuspendLayout()
+        Me.GroupBox24.SuspendLayout()
+        Me.GroupBox25.SuspendLayout()
+        Me.GroupBox26.SuspendLayout()
+        Me.GroupBox27.SuspendLayout()
+        Me.GroupBox28.SuspendLayout()
         Me.SuspendLayout()
         '
         'GroupBox10
@@ -174,7 +194,7 @@ Partial Class viewBlotter
         Me.GroupBox9.Controls.Add(Me.GroupBox20)
         Me.GroupBox9.Controls.Add(Me.GroupBox21)
         Me.GroupBox9.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.28571!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox9.Location = New System.Drawing.Point(-6, 496)
+        Me.GroupBox9.Location = New System.Drawing.Point(12, 466)
         Me.GroupBox9.Name = "GroupBox9"
         Me.GroupBox9.Size = New System.Drawing.Size(1095, 221)
         Me.GroupBox9.TabIndex = 17
@@ -318,7 +338,7 @@ Partial Class viewBlotter
         Me.GBinci.Controls.Add(Me.GroupBox3)
         Me.GBinci.Controls.Add(Me.GroupBox1)
         Me.GBinci.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.28571!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GBinci.Location = New System.Drawing.Point(-6, 42)
+        Me.GBinci.Location = New System.Drawing.Point(12, 12)
         Me.GBinci.Name = "GBinci"
         Me.GBinci.Size = New System.Drawing.Size(1095, 221)
         Me.GBinci.TabIndex = 14
@@ -472,7 +492,7 @@ Partial Class viewBlotter
         Me.GroupBox8.Controls.Add(Me.GroupBox13)
         Me.GroupBox8.Controls.Add(Me.GroupBox15)
         Me.GroupBox8.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.28571!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox8.Location = New System.Drawing.Point(-6, 269)
+        Me.GroupBox8.Location = New System.Drawing.Point(12, 239)
         Me.GroupBox8.Name = "GroupBox8"
         Me.GroupBox8.Size = New System.Drawing.Size(1095, 221)
         Me.GroupBox8.TabIndex = 16
@@ -510,15 +530,155 @@ Partial Class viewBlotter
         Me.GroupBox12.TabStop = False
         Me.GroupBox12.Text = "Date of Birth"
         '
+        'GroupBox22
+        '
+        Me.GroupBox22.BackColor = System.Drawing.Color.White
+        Me.GroupBox22.Controls.Add(Me.GroupBox23)
+        Me.GroupBox22.Controls.Add(Me.GroupBox24)
+        Me.GroupBox22.Controls.Add(Me.GroupBox25)
+        Me.GroupBox22.Controls.Add(Me.GroupBox26)
+        Me.GroupBox22.Controls.Add(Me.GroupBox27)
+        Me.GroupBox22.Controls.Add(Me.GroupBox28)
+        Me.GroupBox22.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.28571!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox22.Location = New System.Drawing.Point(12, 693)
+        Me.GroupBox22.Name = "GroupBox22"
+        Me.GroupBox22.Size = New System.Drawing.Size(1095, 221)
+        Me.GroupBox22.TabIndex = 18
+        Me.GroupBox22.TabStop = False
+        Me.GroupBox22.Text = "Suspect Details"
+        '
+        'GroupBox23
+        '
+        Me.GroupBox23.Controls.Add(Me.TextBox14)
+        Me.GroupBox23.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.07563!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox23.Location = New System.Drawing.Point(286, 42)
+        Me.GroupBox23.Name = "GroupBox23"
+        Me.GroupBox23.Size = New System.Drawing.Size(248, 74)
+        Me.GroupBox23.TabIndex = 25
+        Me.GroupBox23.TabStop = False
+        Me.GroupBox23.Text = "Citizenship"
+        '
+        'TextBox14
+        '
+        Me.TextBox14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TextBox14.Location = New System.Drawing.Point(6, 34)
+        Me.TextBox14.Name = "TextBox14"
+        Me.TextBox14.Size = New System.Drawing.Size(236, 25)
+        Me.TextBox14.TabIndex = 13
+        '
+        'GroupBox24
+        '
+        Me.GroupBox24.BackColor = System.Drawing.Color.White
+        Me.GroupBox24.Controls.Add(Me.DateTimePicker4)
+        Me.GroupBox24.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.07563!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox24.Location = New System.Drawing.Point(828, 42)
+        Me.GroupBox24.Name = "GroupBox24"
+        Me.GroupBox24.Size = New System.Drawing.Size(248, 74)
+        Me.GroupBox24.TabIndex = 24
+        Me.GroupBox24.TabStop = False
+        Me.GroupBox24.Text = "Date of Birth"
+        '
+        'DateTimePicker4
+        '
+        Me.DateTimePicker4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.07563!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DateTimePicker4.Location = New System.Drawing.Point(0, 34)
+        Me.DateTimePicker4.Name = "DateTimePicker4"
+        Me.DateTimePicker4.Size = New System.Drawing.Size(246, 25)
+        Me.DateTimePicker4.TabIndex = 11
+        Me.DateTimePicker4.Value = New Date(2022, 11, 19, 16, 8, 18, 0)
+        '
+        'GroupBox25
+        '
+        Me.GroupBox25.Controls.Add(Me.TextBox15)
+        Me.GroupBox25.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.07563!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox25.Location = New System.Drawing.Point(286, 131)
+        Me.GroupBox25.Name = "GroupBox25"
+        Me.GroupBox25.Size = New System.Drawing.Size(788, 74)
+        Me.GroupBox25.TabIndex = 21
+        Me.GroupBox25.TabStop = False
+        Me.GroupBox25.Text = "Address"
+        '
+        'TextBox15
+        '
+        Me.TextBox15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TextBox15.Location = New System.Drawing.Point(6, 34)
+        Me.TextBox15.Name = "TextBox15"
+        Me.TextBox15.Size = New System.Drawing.Size(776, 25)
+        Me.TextBox15.TabIndex = 13
+        '
+        'GroupBox26
+        '
+        Me.GroupBox26.Controls.Add(Me.TextBox16)
+        Me.GroupBox26.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.07563!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox26.Location = New System.Drawing.Point(17, 131)
+        Me.GroupBox26.Name = "GroupBox26"
+        Me.GroupBox26.Size = New System.Drawing.Size(248, 74)
+        Me.GroupBox26.TabIndex = 20
+        Me.GroupBox26.TabStop = False
+        Me.GroupBox26.Text = "Contact Number"
+        '
+        'TextBox16
+        '
+        Me.TextBox16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TextBox16.Location = New System.Drawing.Point(6, 34)
+        Me.TextBox16.Name = "TextBox16"
+        Me.TextBox16.Size = New System.Drawing.Size(236, 25)
+        Me.TextBox16.TabIndex = 13
+        '
+        'GroupBox27
+        '
+        Me.GroupBox27.Controls.Add(Me.ComboBox3)
+        Me.GroupBox27.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.07563!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox27.Location = New System.Drawing.Point(557, 42)
+        Me.GroupBox27.Name = "GroupBox27"
+        Me.GroupBox27.Size = New System.Drawing.Size(248, 74)
+        Me.GroupBox27.TabIndex = 18
+        Me.GroupBox27.TabStop = False
+        Me.GroupBox27.Text = "Gender"
+        '
+        'ComboBox3
+        '
+        Me.ComboBox3.FormattingEnabled = True
+        Me.ComboBox3.Items.AddRange(New Object() {"Male", "Female"})
+        Me.ComboBox3.Location = New System.Drawing.Point(7, 34)
+        Me.ComboBox3.Name = "ComboBox3"
+        Me.ComboBox3.Size = New System.Drawing.Size(235, 26)
+        Me.ComboBox3.TabIndex = 0
+        '
+        'GroupBox28
+        '
+        Me.GroupBox28.Controls.Add(Me.TextBox17)
+        Me.GroupBox28.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.07563!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox28.Location = New System.Drawing.Point(17, 42)
+        Me.GroupBox28.Name = "GroupBox28"
+        Me.GroupBox28.Size = New System.Drawing.Size(248, 74)
+        Me.GroupBox28.TabIndex = 15
+        Me.GroupBox28.TabStop = False
+        Me.GroupBox28.Text = "Fullname"
+        '
+        'TextBox17
+        '
+        Me.TextBox17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TextBox17.Location = New System.Drawing.Point(6, 34)
+        Me.TextBox17.Name = "TextBox17"
+        Me.TextBox17.Size = New System.Drawing.Size(236, 25)
+        Me.TextBox17.TabIndex = 13
+        '
         'viewBlotter
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1083, 829)
+        Me.BackColor = System.Drawing.Color.White
+        Me.ClientSize = New System.Drawing.Size(1122, 1003)
+        Me.Controls.Add(Me.GroupBox22)
         Me.Controls.Add(Me.GroupBox9)
         Me.Controls.Add(Me.GBinci)
         Me.Controls.Add(Me.GroupBox8)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
+        Me.MaximizeBox = False
+        Me.MinimizeBox = False
         Me.Name = "viewBlotter"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "viewBlotter"
         Me.GroupBox10.ResumeLayout(False)
         Me.GroupBox10.PerformLayout()
@@ -555,6 +715,17 @@ Partial Class viewBlotter
         Me.GroupBox14.ResumeLayout(False)
         Me.GroupBox14.PerformLayout()
         Me.GroupBox12.ResumeLayout(False)
+        Me.GroupBox22.ResumeLayout(False)
+        Me.GroupBox23.ResumeLayout(False)
+        Me.GroupBox23.PerformLayout()
+        Me.GroupBox24.ResumeLayout(False)
+        Me.GroupBox25.ResumeLayout(False)
+        Me.GroupBox25.PerformLayout()
+        Me.GroupBox26.ResumeLayout(False)
+        Me.GroupBox26.PerformLayout()
+        Me.GroupBox27.ResumeLayout(False)
+        Me.GroupBox28.ResumeLayout(False)
+        Me.GroupBox28.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
@@ -600,4 +771,17 @@ Partial Class viewBlotter
     Friend WithEvents GroupBox14 As GroupBox
     Friend WithEvents TextBox11 As TextBox
     Friend WithEvents GroupBox12 As GroupBox
+    Friend WithEvents GroupBox22 As GroupBox
+    Friend WithEvents GroupBox23 As GroupBox
+    Friend WithEvents TextBox14 As TextBox
+    Friend WithEvents GroupBox24 As GroupBox
+    Friend WithEvents DateTimePicker4 As DateTimePicker
+    Friend WithEvents GroupBox25 As GroupBox
+    Friend WithEvents TextBox15 As TextBox
+    Friend WithEvents GroupBox26 As GroupBox
+    Friend WithEvents TextBox16 As TextBox
+    Friend WithEvents GroupBox27 As GroupBox
+    Friend WithEvents ComboBox3 As ComboBox
+    Friend WithEvents GroupBox28 As GroupBox
+    Friend WithEvents TextBox17 As TextBox
 End Class

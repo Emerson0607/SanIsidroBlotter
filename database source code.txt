@@ -1,0 +1,69 @@
+BLOTTER DATABASE QUERY
+
+
+                .columns(0).headertext = "Entry Code"
+                .columns(1).headertext = "Incident type"
+                .columns(2).headertext = "Incident Location"
+                .columns(3).headertext = "Incident Date"
+                .columns(4).headertext = "Complainant"
+
+CREATE TABLE incidentBlotter (
+    	id INT NOT NULL PRIMARY KEY,
+    	reportDate DATE NOT NULL,
+    	incidentType varchar(255) NOT NULL,
+    	incidentDT DATE NOT NULL,
+    	incidentLocation varchar(255) NOT NULL,
+    	incidentDetails varchar(255) NOT NULL,
+    	numberCall INT NOT NULL
+);
+
+CREATE TABLE complainantBlotter (
+	id INT NOT NULL PRIMARY KEY,
+   	fullname varchar(255) NOT NULL,
+    	Citizenship varchar(255) NOT NULL,
+	gender varchar(255) NOT NULL,
+ 	bDay DATE NOT NULL,
+    	contactNumber BIGINT NOT NULL,
+	address varchar(255) NOT NULL,
+);
+
+
+CREATE TABLE victimBlotter (
+	id INT NOT NULL PRIMARY KEY,
+   	fullname varchar(255) NOT NULL,
+    	Citizenship varchar(255) NOT NULL,
+	gender varchar(255) NOT NULL,
+ 	bDay DATE NOT NULL,
+    	contactNumber BIGINT NOT NULL,
+	address varchar(255) NOT NULL,
+);
+
+CREATE TABLE suspectBlotter (
+	id INT NOT NULL PRIMARY KEY,
+   	fullname varchar(255) ,
+    	Citizenship varchar(255) ,
+	gender varchar(255) NOT NULL,
+ 	bDay DATE ,
+    	contactNumber BIGINT,
+	address varchar(255),
+	workAddress varchar(255) ,
+	suspectDescription varchar(255) NOT NULL,
+	withPrev varchar(255),
+	previousCase varchar(255),
+	relationship varchar(255)
+);
+
+
+AGREEMENT
+
+CREATE TABLE agreementBlotter (
+	id INT NOT NULL PRIMARY KEY,
+	agreementDate DATE NOT NULL,
+    	agreementLocation varchar(255) NOT NULL,
+	officeName varchar(255) NOT NULL,
+	complainant varchar(255) NOT NULL,
+    	victim varchar(255) NOT NULL,
+    	suspect varchar(255) NOT NULL,
+    	witness varchar(255) NOT NULL,
+    	agreement varchar(1000) NOT NULL,
+);
