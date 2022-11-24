@@ -277,7 +277,7 @@ Partial Class CreateAgree
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
-        Me.ClientSize = New System.Drawing.Size(1122, 753)
+        Me.ClientSize = New System.Drawing.Size(1122, 823)
         Me.Controls.Add(Me.GBvicdetail)
         Me.Controls.Add(Me.btnSubmit)
         Me.Controls.Add(Me.GBinci)

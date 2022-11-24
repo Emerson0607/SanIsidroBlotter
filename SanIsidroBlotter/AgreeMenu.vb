@@ -28,4 +28,13 @@ Public Class AgreeMenu
         MainForm.ShowDialog()
         Me.Show()
     End Sub
+
+    Private Sub AgreeMenu_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        reloadAgreement("SELECT incidentBlotter.id, incidentBlotter.incidentType, incidentBlotter.incidentLocation, incidentBlotter.incidentDT,  agreement.agreementDate, agreement.complainant FROM incidentBlotter INNER JOIN agreement ON incidentBlotter.id = agreement.id ORDER BY incidentBlotter.id;  ", DataGridView1)
+        Dim FontSize As New Font(DataGridView1.ColumnHeadersDefaultCellStyle.Font.Size, 9)
+        Me.DataGridView1.ColumnHeadersDefaultCellStyle.Font = FontSize
+
+        Dim FontBold As New Font(DataGridView1.ColumnHeadersDefaultCellStyle.Font, FontStyle.Bold)
+        Me.DataGridView1.ColumnHeadersDefaultCellStyle.Font = FontBold
+    End Sub
 End Class
