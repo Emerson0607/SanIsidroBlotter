@@ -49,10 +49,8 @@ Partial Class editBlotter
         Me.numberCall = New System.Windows.Forms.TextBox()
         Me.incidentDetails = New System.Windows.Forms.TextBox()
         Me.incidentLocation = New System.Windows.Forms.TextBox()
-        Me.incidentDT = New System.Windows.Forms.DateTimePicker()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.incidentType = New System.Windows.Forms.TextBox()
-        Me.reportDate = New System.Windows.Forms.DateTimePicker()
         Me.Label25 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.GroupBox9 = New System.Windows.Forms.GroupBox()
@@ -61,7 +59,6 @@ Partial Class editBlotter
         Me.vBday = New System.Windows.Forms.DateTimePicker()
         Me.vCitizenship = New System.Windows.Forms.TextBox()
         Me.vFullname = New System.Windows.Forms.TextBox()
-        Me.id = New System.Windows.Forms.TextBox()
         Me.GroupBox22 = New System.Windows.Forms.GroupBox()
         Me.Label24 = New System.Windows.Forms.Label()
         Me.sAddress = New System.Windows.Forms.TextBox()
@@ -77,6 +74,9 @@ Partial Class editBlotter
         Me.cFullname = New System.Windows.Forms.TextBox()
         Me.btnSave = New System.Windows.Forms.Button()
         Me.GBinci = New System.Windows.Forms.GroupBox()
+        Me.incidentDT = New System.Windows.Forms.DateTimePicker()
+        Me.reportDate = New System.Windows.Forms.DateTimePicker()
+        Me.id = New System.Windows.Forms.ComboBox()
         Me.GroupBox9.SuspendLayout()
         Me.GroupBox22.SuspendLayout()
         Me.GroupBox8.SuspendLayout()
@@ -264,12 +264,14 @@ Partial Class editBlotter
         '
         'sBday
         '
+        Me.sBday.CustomFormat = "MM/dd/yyyy"
         Me.sBday.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.07563!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.sBday.Format = System.Windows.Forms.DateTimePickerFormat.Custom
         Me.sBday.Location = New System.Drawing.Point(828, 67)
         Me.sBday.Name = "sBday"
         Me.sBday.Size = New System.Drawing.Size(246, 25)
         Me.sBday.TabIndex = 11
-        Me.sBday.Value = New Date(2022, 11, 19, 16, 8, 18, 0)
+        Me.sBday.Value = New Date(2022, 11, 24, 14, 12, 38, 0)
         '
         'Label21
         '
@@ -322,23 +324,14 @@ Partial Class editBlotter
         Me.incidentLocation.Size = New System.Drawing.Size(236, 27)
         Me.incidentLocation.TabIndex = 13
         '
-        'incidentDT
-        '
-        Me.incidentDT.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.07563!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.incidentDT.Location = New System.Drawing.Point(829, 72)
-        Me.incidentDT.Name = "incidentDT"
-        Me.incidentDT.Size = New System.Drawing.Size(246, 25)
-        Me.incidentDT.TabIndex = 11
-        Me.incidentDT.Value = New Date(2022, 11, 19, 16, 8, 18, 0)
-        '
         'Label4
         '
         Me.Label4.AutoSize = True
         Me.Label4.Location = New System.Drawing.Point(827, 43)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(217, 22)
+        Me.Label4.Size = New System.Drawing.Size(134, 22)
         Me.Label4.TabIndex = 26
-        Me.Label4.Text = "Incident Date and Time"
+        Me.Label4.Text = "Incident Date "
         '
         'incidentType
         '
@@ -347,15 +340,6 @@ Partial Class editBlotter
         Me.incidentType.Name = "incidentType"
         Me.incidentType.Size = New System.Drawing.Size(236, 27)
         Me.incidentType.TabIndex = 13
-        '
-        'reportDate
-        '
-        Me.reportDate.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.07563!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.reportDate.Location = New System.Drawing.Point(287, 73)
-        Me.reportDate.Name = "reportDate"
-        Me.reportDate.Size = New System.Drawing.Size(245, 25)
-        Me.reportDate.TabIndex = 11
-        Me.reportDate.Value = New Date(2022, 11, 19, 0, 0, 0, 0)
         '
         'Label25
         '
@@ -416,12 +400,14 @@ Partial Class editBlotter
         '
         'vBday
         '
+        Me.vBday.CustomFormat = "MM/dd/yyyy"
         Me.vBday.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.07563!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.vBday.Format = System.Windows.Forms.DateTimePickerFormat.Custom
         Me.vBday.Location = New System.Drawing.Point(828, 59)
         Me.vBday.Name = "vBday"
         Me.vBday.Size = New System.Drawing.Size(246, 25)
         Me.vBday.TabIndex = 11
-        Me.vBday.Value = New Date(2022, 11, 19, 16, 8, 18, 0)
+        Me.vBday.Value = New Date(2022, 11, 24, 14, 12, 38, 0)
         '
         'vCitizenship
         '
@@ -438,14 +424,6 @@ Partial Class editBlotter
         Me.vFullname.Name = "vFullname"
         Me.vFullname.Size = New System.Drawing.Size(236, 27)
         Me.vFullname.TabIndex = 13
-        '
-        'id
-        '
-        Me.id.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.id.Location = New System.Drawing.Point(26, 72)
-        Me.id.Name = "id"
-        Me.id.Size = New System.Drawing.Size(236, 27)
-        Me.id.TabIndex = 13
         '
         'GroupBox22
         '
@@ -553,12 +531,14 @@ Partial Class editBlotter
         '
         'cbDay
         '
+        Me.cbDay.CustomFormat = "MM/dd/yyyy"
         Me.cbDay.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.07563!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cbDay.Format = System.Windows.Forms.DateTimePickerFormat.Custom
         Me.cbDay.Location = New System.Drawing.Point(829, 64)
         Me.cbDay.Name = "cbDay"
         Me.cbDay.Size = New System.Drawing.Size(246, 25)
         Me.cbDay.TabIndex = 11
-        Me.cbDay.Value = New Date(2022, 11, 19, 16, 8, 18, 0)
+        Me.cbDay.Value = New Date(2022, 11, 24, 14, 12, 38, 0)
         '
         'cGender
         '
@@ -599,20 +579,20 @@ Partial Class editBlotter
         'GBinci
         '
         Me.GBinci.BackColor = System.Drawing.Color.White
+        Me.GBinci.Controls.Add(Me.incidentDT)
+        Me.GBinci.Controls.Add(Me.reportDate)
+        Me.GBinci.Controls.Add(Me.id)
         Me.GBinci.Controls.Add(Me.numberCall)
         Me.GBinci.Controls.Add(Me.Label7)
         Me.GBinci.Controls.Add(Me.incidentDetails)
         Me.GBinci.Controls.Add(Me.Label6)
         Me.GBinci.Controls.Add(Me.incidentLocation)
         Me.GBinci.Controls.Add(Me.Label5)
-        Me.GBinci.Controls.Add(Me.incidentDT)
         Me.GBinci.Controls.Add(Me.Label4)
         Me.GBinci.Controls.Add(Me.incidentType)
         Me.GBinci.Controls.Add(Me.Label3)
         Me.GBinci.Controls.Add(Me.Label2)
-        Me.GBinci.Controls.Add(Me.reportDate)
         Me.GBinci.Controls.Add(Me.Label1)
-        Me.GBinci.Controls.Add(Me.id)
         Me.GBinci.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.28571!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GBinci.Location = New System.Drawing.Point(14, 15)
         Me.GBinci.Name = "GBinci"
@@ -620,6 +600,46 @@ Partial Class editBlotter
         Me.GBinci.TabIndex = 15
         Me.GBinci.TabStop = False
         Me.GBinci.Text = "Incident Details"
+        '
+        'incidentDT
+        '
+        Me.incidentDT.CalendarFont = New System.Drawing.Font("Verdana", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.incidentDT.CalendarMonthBackground = System.Drawing.Color.White
+        Me.incidentDT.CustomFormat = "MM/dd/yyyy"
+        Me.incidentDT.Font = New System.Drawing.Font("Verdana", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.incidentDT.Format = System.Windows.Forms.DateTimePickerFormat.Custom
+        Me.incidentDT.Location = New System.Drawing.Point(828, 75)
+        Me.incidentDT.Margin = New System.Windows.Forms.Padding(4)
+        Me.incidentDT.MaxDate = New Date(2022, 12, 25, 23, 59, 59, 0)
+        Me.incidentDT.MinDate = New Date(1980, 1, 1, 0, 0, 0, 0)
+        Me.incidentDT.Name = "incidentDT"
+        Me.incidentDT.Size = New System.Drawing.Size(242, 24)
+        Me.incidentDT.TabIndex = 31
+        Me.incidentDT.Value = New Date(2022, 11, 24, 23, 48, 55, 0)
+        '
+        'reportDate
+        '
+        Me.reportDate.CalendarFont = New System.Drawing.Font("Verdana", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.reportDate.CalendarMonthBackground = System.Drawing.Color.White
+        Me.reportDate.CustomFormat = "MM/dd/yyyy"
+        Me.reportDate.Font = New System.Drawing.Font("Verdana", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.reportDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom
+        Me.reportDate.Location = New System.Drawing.Point(290, 75)
+        Me.reportDate.Margin = New System.Windows.Forms.Padding(4)
+        Me.reportDate.MaxDate = New Date(2022, 12, 25, 23, 59, 59, 0)
+        Me.reportDate.MinDate = New Date(1980, 1, 1, 0, 0, 0, 0)
+        Me.reportDate.Name = "reportDate"
+        Me.reportDate.Size = New System.Drawing.Size(242, 24)
+        Me.reportDate.TabIndex = 30
+        Me.reportDate.Value = New Date(2022, 11, 24, 23, 48, 42, 0)
+        '
+        'id
+        '
+        Me.id.FormattingEnabled = True
+        Me.id.Location = New System.Drawing.Point(26, 70)
+        Me.id.Name = "id"
+        Me.id.Size = New System.Drawing.Size(233, 28)
+        Me.id.TabIndex = 29
         '
         'editBlotter
         '
@@ -677,10 +697,8 @@ Partial Class editBlotter
     Friend WithEvents numberCall As TextBox
     Friend WithEvents incidentDetails As TextBox
     Friend WithEvents incidentLocation As TextBox
-    Friend WithEvents incidentDT As DateTimePicker
     Friend WithEvents Label4 As Label
     Friend WithEvents incidentType As TextBox
-    Friend WithEvents reportDate As DateTimePicker
     Friend WithEvents Label25 As Label
     Friend WithEvents Label1 As Label
     Friend WithEvents GroupBox9 As GroupBox
@@ -689,7 +707,6 @@ Partial Class editBlotter
     Friend WithEvents vBday As DateTimePicker
     Friend WithEvents vCitizenship As TextBox
     Friend WithEvents vFullname As TextBox
-    Friend WithEvents id As TextBox
     Friend WithEvents GroupBox22 As GroupBox
     Friend WithEvents Label24 As Label
     Friend WithEvents sAddress As TextBox
@@ -705,4 +722,7 @@ Partial Class editBlotter
     Friend WithEvents cFullname As TextBox
     Friend WithEvents btnSave As Button
     Friend WithEvents GBinci As GroupBox
+    Friend WithEvents id As ComboBox
+    Friend WithEvents incidentDT As DateTimePicker
+    Friend WithEvents reportDate As DateTimePicker
 End Class

@@ -17,11 +17,11 @@ Module Module1
 
     'Public Function userProfile()
     '    Return profile
-    'End Function
+    'End Function 
 
 
     Public Function strconnection() As MySqlConnection
-        Return New MySqlConnection("server=localhost;user id=root;port=3306;database=blotter")
+        Return New MySqlConnection("server=localhost;user id=root;port=3306;database=blotter; Persist Security Info=True;Convert Zero Datetime=True ")
     End Function
 
 

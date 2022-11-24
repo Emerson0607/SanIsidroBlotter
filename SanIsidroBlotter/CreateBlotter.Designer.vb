@@ -23,60 +23,60 @@ Partial Class CreateBlotter
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.GBinci = New System.Windows.Forms.GroupBox()
-        Me.numberCall = New System.Windows.Forms.TextBox()
-        Me.incidentDetails = New System.Windows.Forms.TextBox()
-        Me.incidentLocation = New System.Windows.Forms.TextBox()
         Me.incidentDT = New System.Windows.Forms.DateTimePicker()
-        Me.incidentType = New System.Windows.Forms.TextBox()
         Me.reportDate = New System.Windows.Forms.DateTimePicker()
+        Me.numberCall = New System.Windows.Forms.TextBox()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.incidentDetails = New System.Windows.Forms.TextBox()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.incidentLocation = New System.Windows.Forms.TextBox()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.incidentType = New System.Windows.Forms.TextBox()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.id = New System.Windows.Forms.TextBox()
         Me.btnSubmit = New System.Windows.Forms.Button()
         Me.GroupBox8 = New System.Windows.Forms.GroupBox()
-        Me.cCitizenship = New System.Windows.Forms.TextBox()
-        Me.cbDay = New System.Windows.Forms.DateTimePicker()
+        Me.Label13 = New System.Windows.Forms.Label()
         Me.cAddress = New System.Windows.Forms.TextBox()
+        Me.Label12 = New System.Windows.Forms.Label()
         Me.cContactNumber = New System.Windows.Forms.TextBox()
+        Me.Label11 = New System.Windows.Forms.Label()
+        Me.cBday = New System.Windows.Forms.DateTimePicker()
+        Me.Label10 = New System.Windows.Forms.Label()
         Me.cGender = New System.Windows.Forms.ComboBox()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.cCitizenship = New System.Windows.Forms.TextBox()
+        Me.Label8 = New System.Windows.Forms.Label()
         Me.cFullname = New System.Windows.Forms.TextBox()
         Me.GroupBox9 = New System.Windows.Forms.GroupBox()
-        Me.vCitizenship = New System.Windows.Forms.TextBox()
-        Me.vBday = New System.Windows.Forms.DateTimePicker()
-        Me.vAddress = New System.Windows.Forms.TextBox()
         Me.vContactNumber = New System.Windows.Forms.TextBox()
-        Me.vFullname = New System.Windows.Forms.TextBox()
-        Me.GroupBox22 = New System.Windows.Forms.GroupBox()
-        Me.sCitizenship = New System.Windows.Forms.TextBox()
-        Me.sAddress = New System.Windows.Forms.TextBox()
-        Me.sGender = New System.Windows.Forms.ComboBox()
-        Me.sFullname = New System.Windows.Forms.TextBox()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.Label7 = New System.Windows.Forms.Label()
-        Me.Label8 = New System.Windows.Forms.Label()
-        Me.Label9 = New System.Windows.Forms.Label()
-        Me.Label10 = New System.Windows.Forms.Label()
-        Me.Label11 = New System.Windows.Forms.Label()
-        Me.Label12 = New System.Windows.Forms.Label()
-        Me.Label13 = New System.Windows.Forms.Label()
-        Me.vGender = New System.Windows.Forms.ComboBox()
-        Me.Label14 = New System.Windows.Forms.Label()
-        Me.Label15 = New System.Windows.Forms.Label()
-        Me.Label16 = New System.Windows.Forms.Label()
-        Me.Label17 = New System.Windows.Forms.Label()
+        Me.vAddress = New System.Windows.Forms.TextBox()
         Me.Label18 = New System.Windows.Forms.Label()
         Me.Label19 = New System.Windows.Forms.Label()
-        Me.sBday = New System.Windows.Forms.DateTimePicker()
-        Me.Label20 = New System.Windows.Forms.Label()
-        Me.Label21 = New System.Windows.Forms.Label()
-        Me.Label22 = New System.Windows.Forms.Label()
-        Me.Label23 = New System.Windows.Forms.Label()
-        Me.sContactNumber = New System.Windows.Forms.TextBox()
+        Me.Label14 = New System.Windows.Forms.Label()
+        Me.vBday = New System.Windows.Forms.DateTimePicker()
+        Me.Label15 = New System.Windows.Forms.Label()
+        Me.vGender = New System.Windows.Forms.ComboBox()
+        Me.Label16 = New System.Windows.Forms.Label()
+        Me.Label17 = New System.Windows.Forms.Label()
+        Me.vCitizenship = New System.Windows.Forms.TextBox()
+        Me.vFullname = New System.Windows.Forms.TextBox()
+        Me.GroupBox22 = New System.Windows.Forms.GroupBox()
         Me.Label24 = New System.Windows.Forms.Label()
         Me.Label25 = New System.Windows.Forms.Label()
+        Me.sContactNumber = New System.Windows.Forms.TextBox()
+        Me.sAddress = New System.Windows.Forms.TextBox()
+        Me.Label20 = New System.Windows.Forms.Label()
+        Me.sBday = New System.Windows.Forms.DateTimePicker()
+        Me.Label21 = New System.Windows.Forms.Label()
+        Me.sGender = New System.Windows.Forms.ComboBox()
+        Me.Label22 = New System.Windows.Forms.Label()
+        Me.Label23 = New System.Windows.Forms.Label()
+        Me.sCitizenship = New System.Windows.Forms.TextBox()
+        Me.sFullname = New System.Windows.Forms.TextBox()
         Me.GBinci.SuspendLayout()
         Me.GroupBox8.SuspendLayout()
         Me.GroupBox9.SuspendLayout()
@@ -86,18 +86,18 @@ Partial Class CreateBlotter
         'GBinci
         '
         Me.GBinci.BackColor = System.Drawing.Color.White
+        Me.GBinci.Controls.Add(Me.incidentDT)
+        Me.GBinci.Controls.Add(Me.reportDate)
         Me.GBinci.Controls.Add(Me.numberCall)
         Me.GBinci.Controls.Add(Me.Label7)
         Me.GBinci.Controls.Add(Me.incidentDetails)
         Me.GBinci.Controls.Add(Me.Label6)
         Me.GBinci.Controls.Add(Me.incidentLocation)
         Me.GBinci.Controls.Add(Me.Label5)
-        Me.GBinci.Controls.Add(Me.incidentDT)
         Me.GBinci.Controls.Add(Me.Label4)
         Me.GBinci.Controls.Add(Me.incidentType)
         Me.GBinci.Controls.Add(Me.Label3)
         Me.GBinci.Controls.Add(Me.Label2)
-        Me.GBinci.Controls.Add(Me.reportDate)
         Me.GBinci.Controls.Add(Me.Label1)
         Me.GBinci.Controls.Add(Me.id)
         Me.GBinci.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.28571!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -108,6 +108,38 @@ Partial Class CreateBlotter
         Me.GBinci.TabStop = False
         Me.GBinci.Text = "Incident Details"
         '
+        'incidentDT
+        '
+        Me.incidentDT.CalendarFont = New System.Drawing.Font("Verdana", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.incidentDT.CalendarMonthBackground = System.Drawing.Color.White
+        Me.incidentDT.CustomFormat = "yyyy/MM/dd"
+        Me.incidentDT.Font = New System.Drawing.Font("Verdana", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.incidentDT.Format = System.Windows.Forms.DateTimePickerFormat.Custom
+        Me.incidentDT.Location = New System.Drawing.Point(828, 75)
+        Me.incidentDT.Margin = New System.Windows.Forms.Padding(4)
+        Me.incidentDT.MaxDate = New Date(2022, 12, 25, 23, 59, 59, 0)
+        Me.incidentDT.MinDate = New Date(1980, 1, 1, 0, 0, 0, 0)
+        Me.incidentDT.Name = "incidentDT"
+        Me.incidentDT.Size = New System.Drawing.Size(242, 24)
+        Me.incidentDT.TabIndex = 33
+        Me.incidentDT.Value = New Date(2022, 11, 24, 14, 55, 43, 0)
+        '
+        'reportDate
+        '
+        Me.reportDate.CalendarFont = New System.Drawing.Font("Verdana", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.reportDate.CalendarMonthBackground = System.Drawing.Color.White
+        Me.reportDate.CustomFormat = "yyyy/MM/dd"
+        Me.reportDate.Font = New System.Drawing.Font("Verdana", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.reportDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom
+        Me.reportDate.Location = New System.Drawing.Point(290, 75)
+        Me.reportDate.Margin = New System.Windows.Forms.Padding(4)
+        Me.reportDate.MaxDate = New Date(2050, 12, 12, 0, 0, 0, 0)
+        Me.reportDate.MinDate = New Date(1980, 1, 1, 0, 0, 0, 0)
+        Me.reportDate.Name = "reportDate"
+        Me.reportDate.Size = New System.Drawing.Size(242, 24)
+        Me.reportDate.TabIndex = 32
+        Me.reportDate.Value = New Date(2022, 11, 24, 14, 55, 43, 0)
+        '
         'numberCall
         '
         Me.numberCall.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
@@ -115,6 +147,15 @@ Partial Class CreateBlotter
         Me.numberCall.Name = "numberCall"
         Me.numberCall.Size = New System.Drawing.Size(236, 27)
         Me.numberCall.TabIndex = 13
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Location = New System.Drawing.Point(561, 111)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(143, 22)
+        Me.Label7.TabIndex = 28
+        Me.Label7.Text = "Number of Call"
         '
         'incidentDetails
         '
@@ -124,6 +165,15 @@ Partial Class CreateBlotter
         Me.incidentDetails.Size = New System.Drawing.Size(244, 27)
         Me.incidentDetails.TabIndex = 13
         '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Location = New System.Drawing.Point(286, 111)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(148, 22)
+        Me.Label6.TabIndex = 27
+        Me.Label6.Text = "Incident Details"
+        '
         'incidentLocation
         '
         Me.incidentLocation.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
@@ -132,14 +182,23 @@ Partial Class CreateBlotter
         Me.incidentLocation.Size = New System.Drawing.Size(236, 27)
         Me.incidentLocation.TabIndex = 13
         '
-        'incidentDT
+        'Label5
         '
-        Me.incidentDT.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.07563!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.incidentDT.Location = New System.Drawing.Point(829, 72)
-        Me.incidentDT.Name = "incidentDT"
-        Me.incidentDT.Size = New System.Drawing.Size(246, 25)
-        Me.incidentDT.TabIndex = 11
-        Me.incidentDT.Value = New Date(2022, 11, 19, 16, 8, 18, 0)
+        Me.Label5.AutoSize = True
+        Me.Label5.Location = New System.Drawing.Point(25, 111)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(162, 22)
+        Me.Label5.TabIndex = 24
+        Me.Label5.Text = "Incident Location"
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(827, 43)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(128, 22)
+        Me.Label4.TabIndex = 26
+        Me.Label4.Text = "Incident Date"
         '
         'incidentType
         '
@@ -149,14 +208,32 @@ Partial Class CreateBlotter
         Me.incidentType.Size = New System.Drawing.Size(236, 27)
         Me.incidentType.TabIndex = 13
         '
-        'reportDate
+        'Label3
         '
-        Me.reportDate.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.07563!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.reportDate.Location = New System.Drawing.Point(287, 73)
-        Me.reportDate.Name = "reportDate"
-        Me.reportDate.Size = New System.Drawing.Size(245, 25)
-        Me.reportDate.TabIndex = 11
-        Me.reportDate.Value = New Date(2022, 11, 19, 0, 0, 0, 0)
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(559, 43)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(131, 22)
+        Me.Label3.TabIndex = 25
+        Me.Label3.Text = "Incident Type"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(285, 43)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(118, 22)
+        Me.Label2.TabIndex = 24
+        Me.Label2.Text = "Report Date"
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(24, 43)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(197, 22)
+        Me.Label1.TabIndex = 23
+        Me.Label1.Text = "Blotter Entry Number"
         '
         'id
         '
@@ -185,7 +262,7 @@ Partial Class CreateBlotter
         Me.GroupBox8.Controls.Add(Me.Label12)
         Me.GroupBox8.Controls.Add(Me.cContactNumber)
         Me.GroupBox8.Controls.Add(Me.Label11)
-        Me.GroupBox8.Controls.Add(Me.cbDay)
+        Me.GroupBox8.Controls.Add(Me.cBday)
         Me.GroupBox8.Controls.Add(Me.Label10)
         Me.GroupBox8.Controls.Add(Me.cGender)
         Me.GroupBox8.Controls.Add(Me.Label9)
@@ -200,22 +277,14 @@ Partial Class CreateBlotter
         Me.GroupBox8.TabStop = False
         Me.GroupBox8.Text = "Report Person / Complainant Details"
         '
-        'cCitizenship
+        'Label13
         '
-        Me.cCitizenship.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.cCitizenship.Location = New System.Drawing.Point(287, 64)
-        Me.cCitizenship.Name = "cCitizenship"
-        Me.cCitizenship.Size = New System.Drawing.Size(245, 27)
-        Me.cCitizenship.TabIndex = 13
-        '
-        'cbDay
-        '
-        Me.cbDay.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.07563!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cbDay.Location = New System.Drawing.Point(829, 64)
-        Me.cbDay.Name = "cbDay"
-        Me.cbDay.Size = New System.Drawing.Size(246, 25)
-        Me.cbDay.TabIndex = 11
-        Me.cbDay.Value = New Date(2022, 11, 19, 16, 8, 18, 0)
+        Me.Label13.AutoSize = True
+        Me.Label13.Location = New System.Drawing.Point(285, 106)
+        Me.Label13.Name = "Label13"
+        Me.Label13.Size = New System.Drawing.Size(83, 22)
+        Me.Label13.TabIndex = 31
+        Me.Label13.Text = "Address"
         '
         'cAddress
         '
@@ -225,6 +294,15 @@ Partial Class CreateBlotter
         Me.cAddress.Size = New System.Drawing.Size(776, 27)
         Me.cAddress.TabIndex = 13
         '
+        'Label12
+        '
+        Me.Label12.AutoSize = True
+        Me.Label12.Location = New System.Drawing.Point(25, 106)
+        Me.Label12.Name = "Label12"
+        Me.Label12.Size = New System.Drawing.Size(154, 22)
+        Me.Label12.TabIndex = 30
+        Me.Label12.Text = "Contact Number"
+        '
         'cContactNumber
         '
         Me.cContactNumber.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
@@ -232,6 +310,35 @@ Partial Class CreateBlotter
         Me.cContactNumber.Name = "cContactNumber"
         Me.cContactNumber.Size = New System.Drawing.Size(236, 27)
         Me.cContactNumber.TabIndex = 13
+        '
+        'Label11
+        '
+        Me.Label11.AutoSize = True
+        Me.Label11.Location = New System.Drawing.Point(826, 39)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(123, 22)
+        Me.Label11.TabIndex = 29
+        Me.Label11.Text = "Date of Birth"
+        '
+        'cBday
+        '
+        Me.cBday.CustomFormat = "yyyy/MM/dd"
+        Me.cBday.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.07563!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cBday.Format = System.Windows.Forms.DateTimePickerFormat.Custom
+        Me.cBday.Location = New System.Drawing.Point(829, 64)
+        Me.cBday.Name = "cBday"
+        Me.cBday.Size = New System.Drawing.Size(246, 25)
+        Me.cBday.TabIndex = 11
+        Me.cBday.Value = New Date(2022, 11, 24, 14, 12, 27, 0)
+        '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.Location = New System.Drawing.Point(562, 39)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(76, 22)
+        Me.Label10.TabIndex = 28
+        Me.Label10.Text = "Gender"
         '
         'cGender
         '
@@ -241,6 +348,32 @@ Partial Class CreateBlotter
         Me.cGender.Name = "cGender"
         Me.cGender.Size = New System.Drawing.Size(235, 28)
         Me.cGender.TabIndex = 0
+        '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.Location = New System.Drawing.Point(284, 39)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(108, 22)
+        Me.Label9.TabIndex = 27
+        Me.Label9.Text = "Citizenship"
+        '
+        'cCitizenship
+        '
+        Me.cCitizenship.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.cCitizenship.Location = New System.Drawing.Point(287, 64)
+        Me.cCitizenship.Name = "cCitizenship"
+        Me.cCitizenship.Size = New System.Drawing.Size(245, 27)
+        Me.cCitizenship.TabIndex = 13
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Location = New System.Drawing.Point(24, 39)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(91, 22)
+        Me.Label8.TabIndex = 26
+        Me.Label8.Text = "Fullname"
         '
         'cFullname
         '
@@ -273,22 +406,13 @@ Partial Class CreateBlotter
         Me.GroupBox9.TabStop = False
         Me.GroupBox9.Text = "Victim Details"
         '
-        'vCitizenship
+        'vContactNumber
         '
-        Me.vCitizenship.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.vCitizenship.Location = New System.Drawing.Point(286, 57)
-        Me.vCitizenship.Name = "vCitizenship"
-        Me.vCitizenship.Size = New System.Drawing.Size(246, 27)
-        Me.vCitizenship.TabIndex = 13
-        '
-        'vBday
-        '
-        Me.vBday.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.07563!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.vBday.Location = New System.Drawing.Point(828, 59)
-        Me.vBday.Name = "vBday"
-        Me.vBday.Size = New System.Drawing.Size(246, 25)
-        Me.vBday.TabIndex = 11
-        Me.vBday.Value = New Date(2022, 11, 19, 16, 8, 18, 0)
+        Me.vContactNumber.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.vContactNumber.Location = New System.Drawing.Point(23, 131)
+        Me.vContactNumber.Name = "vContactNumber"
+        Me.vContactNumber.Size = New System.Drawing.Size(236, 27)
+        Me.vContactNumber.TabIndex = 13
         '
         'vAddress
         '
@@ -298,13 +422,87 @@ Partial Class CreateBlotter
         Me.vAddress.Size = New System.Drawing.Size(776, 27)
         Me.vAddress.TabIndex = 13
         '
-        'vContactNumber
+        'Label18
         '
-        Me.vContactNumber.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.vContactNumber.Location = New System.Drawing.Point(23, 131)
-        Me.vContactNumber.Name = "vContactNumber"
-        Me.vContactNumber.Size = New System.Drawing.Size(236, 27)
-        Me.vContactNumber.TabIndex = 13
+        Me.Label18.AutoSize = True
+        Me.Label18.Location = New System.Drawing.Point(284, 106)
+        Me.Label18.Name = "Label18"
+        Me.Label18.Size = New System.Drawing.Size(83, 22)
+        Me.Label18.TabIndex = 37
+        Me.Label18.Text = "Address"
+        '
+        'Label19
+        '
+        Me.Label19.AutoSize = True
+        Me.Label19.Location = New System.Drawing.Point(22, 106)
+        Me.Label19.Name = "Label19"
+        Me.Label19.Size = New System.Drawing.Size(154, 22)
+        Me.Label19.TabIndex = 36
+        Me.Label19.Text = "Contact Number"
+        '
+        'Label14
+        '
+        Me.Label14.AutoSize = True
+        Me.Label14.Location = New System.Drawing.Point(825, 34)
+        Me.Label14.Name = "Label14"
+        Me.Label14.Size = New System.Drawing.Size(123, 22)
+        Me.Label14.TabIndex = 35
+        Me.Label14.Text = "Date of Birth"
+        '
+        'vBday
+        '
+        Me.vBday.CustomFormat = "yyyy/MM/dd"
+        Me.vBday.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.07563!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.vBday.Format = System.Windows.Forms.DateTimePickerFormat.Custom
+        Me.vBday.Location = New System.Drawing.Point(828, 59)
+        Me.vBday.Name = "vBday"
+        Me.vBday.Size = New System.Drawing.Size(246, 25)
+        Me.vBday.TabIndex = 11
+        Me.vBday.Value = New Date(2022, 11, 24, 14, 12, 27, 0)
+        '
+        'Label15
+        '
+        Me.Label15.AutoSize = True
+        Me.Label15.Location = New System.Drawing.Point(557, 34)
+        Me.Label15.Name = "Label15"
+        Me.Label15.Size = New System.Drawing.Size(76, 22)
+        Me.Label15.TabIndex = 34
+        Me.Label15.Text = "Gender"
+        '
+        'vGender
+        '
+        Me.vGender.FormattingEnabled = True
+        Me.vGender.Items.AddRange(New Object() {"Male", "Female"})
+        Me.vGender.Location = New System.Drawing.Point(561, 57)
+        Me.vGender.Name = "vGender"
+        Me.vGender.Size = New System.Drawing.Size(238, 28)
+        Me.vGender.TabIndex = 0
+        '
+        'Label16
+        '
+        Me.Label16.AutoSize = True
+        Me.Label16.Location = New System.Drawing.Point(285, 34)
+        Me.Label16.Name = "Label16"
+        Me.Label16.Size = New System.Drawing.Size(108, 22)
+        Me.Label16.TabIndex = 33
+        Me.Label16.Text = "Citizenship"
+        '
+        'Label17
+        '
+        Me.Label17.AutoSize = True
+        Me.Label17.Location = New System.Drawing.Point(22, 34)
+        Me.Label17.Name = "Label17"
+        Me.Label17.Size = New System.Drawing.Size(91, 22)
+        Me.Label17.TabIndex = 32
+        Me.Label17.Text = "Fullname"
+        '
+        'vCitizenship
+        '
+        Me.vCitizenship.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.vCitizenship.Location = New System.Drawing.Point(286, 57)
+        Me.vCitizenship.Name = "vCitizenship"
+        Me.vCitizenship.Size = New System.Drawing.Size(246, 27)
+        Me.vCitizenship.TabIndex = 13
         '
         'vFullname
         '
@@ -337,13 +535,31 @@ Partial Class CreateBlotter
         Me.GroupBox22.TabStop = False
         Me.GroupBox22.Text = "Suspect Details"
         '
-        'sCitizenship
+        'Label24
         '
-        Me.sCitizenship.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.sCitizenship.Location = New System.Drawing.Point(286, 67)
-        Me.sCitizenship.Name = "sCitizenship"
-        Me.sCitizenship.Size = New System.Drawing.Size(246, 27)
-        Me.sCitizenship.TabIndex = 13
+        Me.Label24.AutoSize = True
+        Me.Label24.Location = New System.Drawing.Point(283, 108)
+        Me.Label24.Name = "Label24"
+        Me.Label24.Size = New System.Drawing.Size(83, 22)
+        Me.Label24.TabIndex = 43
+        Me.Label24.Text = "Address"
+        '
+        'Label25
+        '
+        Me.Label25.AutoSize = True
+        Me.Label25.Location = New System.Drawing.Point(21, 108)
+        Me.Label25.Name = "Label25"
+        Me.Label25.Size = New System.Drawing.Size(154, 22)
+        Me.Label25.TabIndex = 42
+        Me.Label25.Text = "Contact Number"
+        '
+        'sContactNumber
+        '
+        Me.sContactNumber.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.sContactNumber.Location = New System.Drawing.Point(23, 133)
+        Me.sContactNumber.Name = "sContactNumber"
+        Me.sContactNumber.Size = New System.Drawing.Size(236, 27)
+        Me.sContactNumber.TabIndex = 13
         '
         'sAddress
         '
@@ -352,212 +568,6 @@ Partial Class CreateBlotter
         Me.sAddress.Name = "sAddress"
         Me.sAddress.Size = New System.Drawing.Size(776, 27)
         Me.sAddress.TabIndex = 13
-        '
-        'sGender
-        '
-        Me.sGender.FormattingEnabled = True
-        Me.sGender.Items.AddRange(New Object() {"Male", "Female"})
-        Me.sGender.Location = New System.Drawing.Point(561, 66)
-        Me.sGender.Name = "sGender"
-        Me.sGender.Size = New System.Drawing.Size(238, 28)
-        Me.sGender.TabIndex = 0
-        '
-        'sFullname
-        '
-        Me.sFullname.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.sFullname.Location = New System.Drawing.Point(23, 67)
-        Me.sFullname.Name = "sFullname"
-        Me.sFullname.Size = New System.Drawing.Size(236, 27)
-        Me.sFullname.TabIndex = 13
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(24, 43)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(197, 22)
-        Me.Label1.TabIndex = 23
-        Me.Label1.Text = "Blotter Entry Number"
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(285, 43)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(118, 22)
-        Me.Label2.TabIndex = 24
-        Me.Label2.Text = "Report Date"
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(559, 43)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(131, 22)
-        Me.Label3.TabIndex = 25
-        Me.Label3.Text = "Incident Type"
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(827, 43)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(217, 22)
-        Me.Label4.TabIndex = 26
-        Me.Label4.Text = "Incident Date and Time"
-        '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(25, 111)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(162, 22)
-        Me.Label5.TabIndex = 24
-        Me.Label5.Text = "Incident Location"
-        '
-        'Label6
-        '
-        Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(286, 111)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(148, 22)
-        Me.Label6.TabIndex = 27
-        Me.Label6.Text = "Incident Details"
-        '
-        'Label7
-        '
-        Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(561, 111)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(143, 22)
-        Me.Label7.TabIndex = 28
-        Me.Label7.Text = "Number of Call"
-        '
-        'Label8
-        '
-        Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(24, 39)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(91, 22)
-        Me.Label8.TabIndex = 26
-        Me.Label8.Text = "Fullname"
-        '
-        'Label9
-        '
-        Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(284, 39)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(108, 22)
-        Me.Label9.TabIndex = 27
-        Me.Label9.Text = "Citizenship"
-        '
-        'Label10
-        '
-        Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(562, 39)
-        Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(76, 22)
-        Me.Label10.TabIndex = 28
-        Me.Label10.Text = "Gender"
-        '
-        'Label11
-        '
-        Me.Label11.AutoSize = True
-        Me.Label11.Location = New System.Drawing.Point(826, 39)
-        Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(123, 22)
-        Me.Label11.TabIndex = 29
-        Me.Label11.Text = "Date of Birth"
-        '
-        'Label12
-        '
-        Me.Label12.AutoSize = True
-        Me.Label12.Location = New System.Drawing.Point(25, 106)
-        Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(154, 22)
-        Me.Label12.TabIndex = 30
-        Me.Label12.Text = "Contact Number"
-        '
-        'Label13
-        '
-        Me.Label13.AutoSize = True
-        Me.Label13.Location = New System.Drawing.Point(285, 106)
-        Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(83, 22)
-        Me.Label13.TabIndex = 31
-        Me.Label13.Text = "Address"
-        '
-        'vGender
-        '
-        Me.vGender.FormattingEnabled = True
-        Me.vGender.Items.AddRange(New Object() {"Male", "Female"})
-        Me.vGender.Location = New System.Drawing.Point(561, 57)
-        Me.vGender.Name = "vGender"
-        Me.vGender.Size = New System.Drawing.Size(238, 28)
-        Me.vGender.TabIndex = 0
-        '
-        'Label14
-        '
-        Me.Label14.AutoSize = True
-        Me.Label14.Location = New System.Drawing.Point(825, 34)
-        Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(123, 22)
-        Me.Label14.TabIndex = 35
-        Me.Label14.Text = "Date of Birth"
-        '
-        'Label15
-        '
-        Me.Label15.AutoSize = True
-        Me.Label15.Location = New System.Drawing.Point(557, 34)
-        Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(76, 22)
-        Me.Label15.TabIndex = 34
-        Me.Label15.Text = "Gender"
-        '
-        'Label16
-        '
-        Me.Label16.AutoSize = True
-        Me.Label16.Location = New System.Drawing.Point(285, 34)
-        Me.Label16.Name = "Label16"
-        Me.Label16.Size = New System.Drawing.Size(108, 22)
-        Me.Label16.TabIndex = 33
-        Me.Label16.Text = "Citizenship"
-        '
-        'Label17
-        '
-        Me.Label17.AutoSize = True
-        Me.Label17.Location = New System.Drawing.Point(22, 34)
-        Me.Label17.Name = "Label17"
-        Me.Label17.Size = New System.Drawing.Size(91, 22)
-        Me.Label17.TabIndex = 32
-        Me.Label17.Text = "Fullname"
-        '
-        'Label18
-        '
-        Me.Label18.AutoSize = True
-        Me.Label18.Location = New System.Drawing.Point(284, 106)
-        Me.Label18.Name = "Label18"
-        Me.Label18.Size = New System.Drawing.Size(83, 22)
-        Me.Label18.TabIndex = 37
-        Me.Label18.Text = "Address"
-        '
-        'Label19
-        '
-        Me.Label19.AutoSize = True
-        Me.Label19.Location = New System.Drawing.Point(22, 106)
-        Me.Label19.Name = "Label19"
-        Me.Label19.Size = New System.Drawing.Size(154, 22)
-        Me.Label19.TabIndex = 36
-        Me.Label19.Text = "Contact Number"
-        '
-        'sBday
-        '
-        Me.sBday.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.07563!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.sBday.Location = New System.Drawing.Point(828, 67)
-        Me.sBday.Name = "sBday"
-        Me.sBday.Size = New System.Drawing.Size(246, 25)
-        Me.sBday.TabIndex = 11
-        Me.sBday.Value = New Date(2022, 11, 19, 16, 8, 18, 0)
         '
         'Label20
         '
@@ -568,6 +578,17 @@ Partial Class CreateBlotter
         Me.Label20.TabIndex = 41
         Me.Label20.Text = "Date of Birth"
         '
+        'sBday
+        '
+        Me.sBday.CustomFormat = "yyyy/MM/dd"
+        Me.sBday.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.07563!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.sBday.Format = System.Windows.Forms.DateTimePickerFormat.Custom
+        Me.sBday.Location = New System.Drawing.Point(828, 67)
+        Me.sBday.Name = "sBday"
+        Me.sBday.Size = New System.Drawing.Size(246, 25)
+        Me.sBday.TabIndex = 11
+        Me.sBday.Value = New Date(2022, 11, 24, 14, 12, 27, 0)
+        '
         'Label21
         '
         Me.Label21.AutoSize = True
@@ -576,6 +597,15 @@ Partial Class CreateBlotter
         Me.Label21.Size = New System.Drawing.Size(76, 22)
         Me.Label21.TabIndex = 40
         Me.Label21.Text = "Gender"
+        '
+        'sGender
+        '
+        Me.sGender.FormattingEnabled = True
+        Me.sGender.Items.AddRange(New Object() {"Male", "Female"})
+        Me.sGender.Location = New System.Drawing.Point(561, 66)
+        Me.sGender.Name = "sGender"
+        Me.sGender.Size = New System.Drawing.Size(238, 28)
+        Me.sGender.TabIndex = 0
         '
         'Label22
         '
@@ -595,31 +625,21 @@ Partial Class CreateBlotter
         Me.Label23.TabIndex = 38
         Me.Label23.Text = "Fullname"
         '
-        'sContactNumber
+        'sCitizenship
         '
-        Me.sContactNumber.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.sContactNumber.Location = New System.Drawing.Point(23, 133)
-        Me.sContactNumber.Name = "sContactNumber"
-        Me.sContactNumber.Size = New System.Drawing.Size(236, 27)
-        Me.sContactNumber.TabIndex = 13
+        Me.sCitizenship.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.sCitizenship.Location = New System.Drawing.Point(286, 67)
+        Me.sCitizenship.Name = "sCitizenship"
+        Me.sCitizenship.Size = New System.Drawing.Size(246, 27)
+        Me.sCitizenship.TabIndex = 13
         '
-        'Label24
+        'sFullname
         '
-        Me.Label24.AutoSize = True
-        Me.Label24.Location = New System.Drawing.Point(283, 108)
-        Me.Label24.Name = "Label24"
-        Me.Label24.Size = New System.Drawing.Size(83, 22)
-        Me.Label24.TabIndex = 43
-        Me.Label24.Text = "Address"
-        '
-        'Label25
-        '
-        Me.Label25.AutoSize = True
-        Me.Label25.Location = New System.Drawing.Point(21, 108)
-        Me.Label25.Name = "Label25"
-        Me.Label25.Size = New System.Drawing.Size(154, 22)
-        Me.Label25.TabIndex = 42
-        Me.Label25.Text = "Contact Number"
+        Me.sFullname.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.sFullname.Location = New System.Drawing.Point(23, 67)
+        Me.sFullname.Name = "sFullname"
+        Me.sFullname.Size = New System.Drawing.Size(236, 27)
+        Me.sFullname.TabIndex = 13
         '
         'CreateBlotter
         '
@@ -650,19 +670,17 @@ Partial Class CreateBlotter
 
     End Sub
     Friend WithEvents GBinci As GroupBox
-    Friend WithEvents reportDate As DateTimePicker
     Friend WithEvents btnSubmit As Button
 
 
     Friend WithEvents numberCall As TextBox
     Friend WithEvents incidentDetails As TextBox
     Friend WithEvents incidentLocation As TextBox
-    Friend WithEvents incidentDT As DateTimePicker
     Friend WithEvents incidentType As TextBox
     Friend WithEvents id As TextBox
     Friend WithEvents GroupBox8 As GroupBox
     Friend WithEvents cCitizenship As TextBox
-    Friend WithEvents cbDay As DateTimePicker
+    Friend WithEvents cBday As DateTimePicker
     Friend WithEvents cAddress As TextBox
     Friend WithEvents cContactNumber As TextBox
     Friend WithEvents cGender As ComboBox
@@ -706,4 +724,6 @@ Partial Class CreateBlotter
     Friend WithEvents Label24 As Label
     Friend WithEvents Label25 As Label
     Friend WithEvents sContactNumber As TextBox
+    Friend WithEvents incidentDT As DateTimePicker
+    Friend WithEvents reportDate As DateTimePicker
 End Class

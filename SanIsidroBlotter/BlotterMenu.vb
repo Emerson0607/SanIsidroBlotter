@@ -29,13 +29,10 @@ Public Class BlotterMenu
         Me.Show()
     End Sub
 
-    Private Sub DataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellContentClick
 
-
-    End Sub
 
     Private Sub BlotterMenu_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        reload("SELECT incidentBlotter.id, incidentBlotter.incidentType, incidentBlotter.incidentLocation, incidentBlotter.incidentDT, complainantBlotter.fullname FROM incidentBlotter INNER JOIN complainantBlotter ON   incidentBlotter.id = complainantBlotter.id ORDER BY incidentBlotter.id;  ", DataGridView1)
+        reload("SELECT incidentBlotter.id, incidentBlotter.incidentType, incidentBlotter.incidentLocation, incidentBlotter.incidentDT, complainantBlotter.fullname FROM incidentBlotter INNER JOIN complainantBlotter ON incidentBlotter.id = complainantBlotter.id ORDER BY incidentBlotter.id;  ", DataGridView1)
         Dim FontSize As New Font(DataGridView1.ColumnHeadersDefaultCellStyle.Font.Size, 9)
         Me.DataGridView1.ColumnHeadersDefaultCellStyle.Font = FontSize
 

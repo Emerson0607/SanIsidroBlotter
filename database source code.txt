@@ -9,7 +9,7 @@ BLOTTER DATABASE QUERY
 
 CREATE TABLE incidentBlotter (
     	id INT NOT NULL PRIMARY KEY,
-    	reportDate DATE NOT NULL,
+    	reportDate DATETIME ,
     	incidentType varchar(255) NOT NULL,
     	incidentDT DATE NOT NULL,
     	incidentLocation varchar(255) NOT NULL,
@@ -54,7 +54,7 @@ CREATE TABLE suspectBlotter (
 );
 
 
-AGREEMENT
+
 
 CREATE TABLE agreementBlotter (
 	id INT NOT NULL PRIMARY KEY,

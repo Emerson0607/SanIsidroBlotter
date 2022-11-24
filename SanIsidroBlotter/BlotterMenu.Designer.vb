@@ -37,7 +37,7 @@ Partial Class BlotterMenu
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Password = New System.Windows.Forms.Label()
         Me.btnView = New System.Windows.Forms.Button()
-        Me.cbCode = New System.Windows.Forms.ComboBox()
+        Me.id = New System.Windows.Forms.ComboBox()
         Me.btnDelete = New System.Windows.Forms.Button()
         Me.btnPrint = New System.Windows.Forms.Button()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -57,7 +57,7 @@ Partial Class BlotterMenu
         '
         Me.DataGridView1.AllowUserToResizeColumns = False
         Me.DataGridView1.AllowUserToResizeRows = False
-        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
         DataGridViewCellStyle1.BackColor = System.Drawing.Color.WhiteSmoke
         DataGridViewCellStyle1.Font = New System.Drawing.Font("Verdana", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         DataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
@@ -140,16 +140,16 @@ Partial Class BlotterMenu
         'TextBox1
         '
         Me.TextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox1.Location = New System.Drawing.Point(842, 113)
+        Me.TextBox1.Location = New System.Drawing.Point(888, 119)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(211, 22)
+        Me.TextBox1.Size = New System.Drawing.Size(191, 22)
         Me.TextBox1.TabIndex = 51
         '
         'Label1
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.28571!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(757, 112)
+        Me.Label1.Location = New System.Drawing.Point(809, 119)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(73, 22)
         Me.Label1.TabIndex = 50
@@ -161,12 +161,12 @@ Partial Class BlotterMenu
         Me.Password.AutoSize = True
         Me.Password.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Password.ForeColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(46, Byte), Integer))
-        Me.Password.Location = New System.Drawing.Point(24, 176)
+        Me.Password.Location = New System.Drawing.Point(43, 176)
         Me.Password.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Password.Name = "Password"
-        Me.Password.Size = New System.Drawing.Size(106, 18)
+        Me.Password.Size = New System.Drawing.Size(64, 18)
         Me.Password.TabIndex = 57
-        Me.Password.Text = "Product Code"
+        Me.Password.Text = "Entry ID"
         '
         'btnView
         '
@@ -178,19 +178,19 @@ Partial Class BlotterMenu
         Me.btnView.Text = "View"
         Me.btnView.UseVisualStyleBackColor = True
         '
-        'cbCode
+        'id
         '
-        Me.cbCode.BackColor = System.Drawing.Color.Gainsboro
-        Me.cbCode.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.cbCode.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.cbCode.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cbCode.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.cbCode.FormattingEnabled = True
-        Me.cbCode.Location = New System.Drawing.Point(133, 172)
-        Me.cbCode.Margin = New System.Windows.Forms.Padding(4)
-        Me.cbCode.Name = "cbCode"
-        Me.cbCode.Size = New System.Drawing.Size(88, 26)
-        Me.cbCode.TabIndex = 60
+        Me.id.BackColor = System.Drawing.Color.Gainsboro
+        Me.id.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.id.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.id.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.id.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.id.FormattingEnabled = True
+        Me.id.Location = New System.Drawing.Point(133, 172)
+        Me.id.Margin = New System.Windows.Forms.Padding(4)
+        Me.id.Name = "id"
+        Me.id.Size = New System.Drawing.Size(88, 26)
+        Me.id.TabIndex = 60
         '
         'btnDelete
         '
@@ -220,7 +220,7 @@ Partial Class BlotterMenu
         Me.ClientSize = New System.Drawing.Size(1122, 753)
         Me.Controls.Add(Me.btnPrint)
         Me.Controls.Add(Me.btnDelete)
-        Me.Controls.Add(Me.cbCode)
+        Me.Controls.Add(Me.id)
         Me.Controls.Add(Me.btnView)
         Me.Controls.Add(Me.Password)
         Me.Controls.Add(Me.btnRefresh)
@@ -249,7 +249,7 @@ Partial Class BlotterMenu
     Friend WithEvents Label1 As Label
     Friend WithEvents Password As Label
     Friend WithEvents btnView As Button
-    Friend WithEvents cbCode As ComboBox
+    Friend WithEvents id As ComboBox
     Friend WithEvents btnDelete As Button
     Friend WithEvents btnPrint As Button
 End Class
