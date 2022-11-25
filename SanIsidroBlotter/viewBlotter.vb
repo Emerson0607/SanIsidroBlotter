@@ -49,6 +49,7 @@ Public Class viewBlotter
             While READER.Read
 
                 'for complainant table
+
                 cFullname.Text = READER.GetString("fullname")
                 cCitizenship.Text = READER.GetString("Citizenship")
                 cGender.Text = READER.GetString("gender")

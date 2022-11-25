@@ -52,181 +52,205 @@ Partial Class viewAgree
         Me.id.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.id.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.id.FormattingEnabled = True
-        Me.id.Location = New System.Drawing.Point(29, 85)
+        Me.id.Location = New System.Drawing.Point(42, 107)
         Me.id.Margin = New System.Windows.Forms.Padding(4)
         Me.id.Name = "id"
-        Me.id.Size = New System.Drawing.Size(235, 26)
+        Me.id.Size = New System.Drawing.Size(236, 26)
         Me.id.TabIndex = 124
         '
         'tbDate
         '
         Me.tbDate.CalendarFont = New System.Drawing.Font("Verdana", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.tbDate.CalendarMonthBackground = System.Drawing.Color.White
+        Me.tbDate.Cursor = System.Windows.Forms.Cursors.Hand
         Me.tbDate.CustomFormat = "yyyy/MM/dd"
         Me.tbDate.Enabled = False
         Me.tbDate.Font = New System.Drawing.Font("Verdana", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.tbDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-        Me.tbDate.Location = New System.Drawing.Point(312, 83)
+        Me.tbDate.Location = New System.Drawing.Point(312, 108)
         Me.tbDate.Margin = New System.Windows.Forms.Padding(4)
         Me.tbDate.MaxDate = New Date(2050, 12, 12, 0, 0, 0, 0)
         Me.tbDate.MinDate = New Date(1980, 1, 1, 0, 0, 0, 0)
         Me.tbDate.Name = "tbDate"
-        Me.tbDate.Size = New System.Drawing.Size(242, 24)
+        Me.tbDate.Size = New System.Drawing.Size(236, 24)
         Me.tbDate.TabIndex = 123
         Me.tbDate.Value = New Date(2022, 11, 24, 14, 55, 43, 0)
         '
         'Label10
         '
         Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(25, 6)
+        Me.Label10.Font = New System.Drawing.Font("Arial Rounded MT Bold", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label10.Location = New System.Drawing.Point(37, 20)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(104, 17)
+        Me.Label10.Size = New System.Drawing.Size(193, 28)
         Me.Label10.TabIndex = 121
         Me.Label10.Text = "Incident Details"
         '
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(865, 62)
+        Me.Label6.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.0!)
+        Me.Label6.Location = New System.Drawing.Point(856, 84)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(86, 17)
+        Me.Label6.Size = New System.Drawing.Size(98, 17)
         Me.Label6.TabIndex = 120
         Me.Label6.Text = "Office Name"
         '
         'tbOffice
         '
         Me.tbOffice.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.tbOffice.Cursor = System.Windows.Forms.Cursors.Hand
         Me.tbOffice.Enabled = False
-        Me.tbOffice.Location = New System.Drawing.Point(861, 82)
+        Me.tbOffice.Location = New System.Drawing.Point(852, 104)
+        Me.tbOffice.Multiline = True
         Me.tbOffice.Name = "tbOffice"
-        Me.tbOffice.Size = New System.Drawing.Size(236, 22)
+        Me.tbOffice.Size = New System.Drawing.Size(236, 27)
         Me.tbOffice.TabIndex = 119
         '
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(603, 62)
+        Me.Label7.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.0!)
+        Me.Label7.Location = New System.Drawing.Point(595, 84)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(135, 17)
+        Me.Label7.Size = New System.Drawing.Size(156, 17)
         Me.Label7.TabIndex = 118
         Me.Label7.Text = "Agreement Location"
         '
         'tbLocation
         '
         Me.tbLocation.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.tbLocation.Cursor = System.Windows.Forms.Cursors.Hand
         Me.tbLocation.Enabled = False
-        Me.tbLocation.Location = New System.Drawing.Point(595, 82)
+        Me.tbLocation.Location = New System.Drawing.Point(587, 104)
+        Me.tbLocation.Multiline = True
         Me.tbLocation.Name = "tbLocation"
-        Me.tbLocation.Size = New System.Drawing.Size(236, 22)
+        Me.tbLocation.Size = New System.Drawing.Size(236, 27)
         Me.tbLocation.TabIndex = 117
         '
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(319, 62)
+        Me.Label8.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.0!)
+        Me.Label8.Location = New System.Drawing.Point(319, 84)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(111, 17)
+        Me.Label8.Size = New System.Drawing.Size(127, 17)
         Me.Label8.TabIndex = 116
         Me.Label8.Text = "Agreement Date"
         '
         'Label9
         '
         Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(33, 62)
+        Me.Label9.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.0!)
+        Me.Label9.Location = New System.Drawing.Point(46, 84)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(140, 17)
+        Me.Label9.Size = New System.Drawing.Size(163, 17)
         Me.Label9.TabIndex = 115
         Me.Label9.Text = "Blotter Entry Number"
         '
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(867, 171)
+        Me.Label5.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.0!)
+        Me.Label5.Location = New System.Drawing.Point(858, 193)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(97, 17)
+        Me.Label5.Size = New System.Drawing.Size(109, 17)
         Me.Label5.TabIndex = 114
         Me.Label5.Text = "Witness name"
         '
         'tbWname
         '
         Me.tbWname.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.tbWname.Cursor = System.Windows.Forms.Cursors.Hand
         Me.tbWname.Enabled = False
-        Me.tbWname.Location = New System.Drawing.Point(861, 191)
+        Me.tbWname.Location = New System.Drawing.Point(852, 213)
+        Me.tbWname.Multiline = True
         Me.tbWname.Name = "tbWname"
-        Me.tbWname.Size = New System.Drawing.Size(236, 22)
+        Me.tbWname.Size = New System.Drawing.Size(236, 27)
         Me.tbWname.TabIndex = 113
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(603, 171)
+        Me.Label4.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.0!)
+        Me.Label4.Location = New System.Drawing.Point(595, 193)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(100, 17)
+        Me.Label4.Size = New System.Drawing.Size(113, 17)
         Me.Label4.TabIndex = 112
         Me.Label4.Text = "Suspect Name"
         '
         'tbSname
         '
         Me.tbSname.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.tbSname.Cursor = System.Windows.Forms.Cursors.Hand
         Me.tbSname.Enabled = False
-        Me.tbSname.Location = New System.Drawing.Point(595, 191)
+        Me.tbSname.Location = New System.Drawing.Point(587, 213)
+        Me.tbSname.Multiline = True
         Me.tbSname.Name = "tbSname"
-        Me.tbSname.Size = New System.Drawing.Size(236, 22)
+        Me.tbSname.Size = New System.Drawing.Size(236, 27)
         Me.tbSname.TabIndex = 111
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(319, 171)
+        Me.Label3.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.0!)
+        Me.Label3.Location = New System.Drawing.Point(319, 193)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(86, 17)
+        Me.Label3.Size = New System.Drawing.Size(99, 17)
         Me.Label3.TabIndex = 110
         Me.Label3.Text = "Victim Name"
         '
         'tbVname
         '
         Me.tbVname.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.tbVname.Cursor = System.Windows.Forms.Cursors.Hand
         Me.tbVname.Enabled = False
-        Me.tbVname.Location = New System.Drawing.Point(312, 191)
+        Me.tbVname.Location = New System.Drawing.Point(312, 213)
+        Me.tbVname.Multiline = True
         Me.tbVname.Name = "tbVname"
-        Me.tbVname.Size = New System.Drawing.Size(236, 22)
+        Me.tbVname.Size = New System.Drawing.Size(236, 27)
         Me.tbVname.TabIndex = 109
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(33, 171)
+        Me.Label2.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.0!)
+        Me.Label2.Location = New System.Drawing.Point(46, 193)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(127, 17)
+        Me.Label2.Size = New System.Drawing.Size(145, 17)
         Me.Label2.TabIndex = 108
         Me.Label2.Text = "Complainant Name"
         '
         'tbCname
         '
         Me.tbCname.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.tbCname.Cursor = System.Windows.Forms.Cursors.Hand
         Me.tbCname.Enabled = False
-        Me.tbCname.Location = New System.Drawing.Point(28, 191)
+        Me.tbCname.Location = New System.Drawing.Point(41, 213)
+        Me.tbCname.Multiline = True
         Me.tbCname.Name = "tbCname"
-        Me.tbCname.Size = New System.Drawing.Size(236, 22)
+        Me.tbCname.Size = New System.Drawing.Size(236, 27)
         Me.tbCname.TabIndex = 106
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(36, 279)
+        Me.Label1.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.0!)
+        Me.Label1.Location = New System.Drawing.Point(52, 299)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(81, 17)
+        Me.Label1.Size = New System.Drawing.Size(93, 17)
         Me.Label1.TabIndex = 107
         Me.Label1.Text = "Agreement "
         '
         'tbAgreement
         '
         Me.tbAgreement.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.tbAgreement.Cursor = System.Windows.Forms.Cursors.Hand
         Me.tbAgreement.Enabled = False
-        Me.tbAgreement.Location = New System.Drawing.Point(28, 308)
+        Me.tbAgreement.Location = New System.Drawing.Point(41, 330)
         Me.tbAgreement.Multiline = True
         Me.tbAgreement.Name = "tbAgreement"
-        Me.tbAgreement.Size = New System.Drawing.Size(1047, 358)
+        Me.tbAgreement.Size = New System.Drawing.Size(1047, 392)
         Me.tbAgreement.TabIndex = 105
         '
         'viewAgree
@@ -259,7 +283,7 @@ Partial Class viewAgree
         Me.MinimizeBox = False
         Me.Name = "viewAgree"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "viewAgree"
+        Me.Text = "Agreement"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

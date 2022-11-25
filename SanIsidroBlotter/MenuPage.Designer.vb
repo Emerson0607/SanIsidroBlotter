@@ -34,23 +34,25 @@ Partial Class MenuPage
         'BTNblotter
         '
         Me.BTNblotter.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.BTNblotter.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.10084!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BTNblotter.Location = New System.Drawing.Point(273, 142)
+        Me.BTNblotter.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.BTNblotter.Font = New System.Drawing.Font("Arial Rounded MT Bold", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BTNblotter.Location = New System.Drawing.Point(284, 139)
         Me.BTNblotter.Name = "BTNblotter"
-        Me.BTNblotter.Size = New System.Drawing.Size(235, 59)
+        Me.BTNblotter.Size = New System.Drawing.Size(230, 60)
         Me.BTNblotter.TabIndex = 0
-        Me.BTNblotter.Text = "Blotter"
+        Me.BTNblotter.Text = "Blotter Record"
         Me.BTNblotter.UseVisualStyleBackColor = False
         '
         'BTNagree
         '
         Me.BTNagree.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.BTNagree.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.10084!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BTNagree.Location = New System.Drawing.Point(273, 241)
+        Me.BTNagree.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.BTNagree.Font = New System.Drawing.Font("Arial Rounded MT Bold", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BTNagree.Location = New System.Drawing.Point(284, 238)
         Me.BTNagree.Name = "BTNagree"
-        Me.BTNagree.Size = New System.Drawing.Size(235, 59)
+        Me.BTNagree.Size = New System.Drawing.Size(230, 60)
         Me.BTNagree.TabIndex = 2
-        Me.BTNagree.Text = "Agreements"
+        Me.BTNagree.Text = "Agreement Record"
         Me.BTNagree.UseVisualStyleBackColor = False
         '
         'PictureBox1
@@ -65,9 +67,11 @@ Partial Class MenuPage
         '
         'btnLogout
         '
-        Me.btnLogout.Location = New System.Drawing.Point(695, 396)
+        Me.btnLogout.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnLogout.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.0!)
+        Me.btnLogout.Location = New System.Drawing.Point(677, 386)
         Me.btnLogout.Name = "btnLogout"
-        Me.btnLogout.Size = New System.Drawing.Size(74, 33)
+        Me.btnLogout.Size = New System.Drawing.Size(100, 40)
         Me.btnLogout.TabIndex = 6
         Me.btnLogout.Text = "Logout"
         Me.btnLogout.UseVisualStyleBackColor = True
@@ -82,7 +86,7 @@ Partial Class MenuPage
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.BTNagree)
         Me.Controls.Add(Me.BTNblotter)
-        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
         Me.MaximizeBox = False
         Me.Name = "MenuPage"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen

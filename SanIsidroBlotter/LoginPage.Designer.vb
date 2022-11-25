@@ -28,15 +28,15 @@ Partial Class LoginPage
         Me.LBLpass = New System.Windows.Forms.Label()
         Me.tbPassword = New System.Windows.Forms.TextBox()
         Me.btnClear = New System.Windows.Forms.Button()
-        Me.btnLogin = New System.Windows.Forms.Button()
         Me.btnChangePassword = New System.Windows.Forms.Button()
+        Me.btnLogin = New System.Windows.Forms.Button()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'PictureBox1
         '
         Me.PictureBox1.Image = Global.SanIsidroBlotter.My.Resources.Resources.SanIsidroLogo
-        Me.PictureBox1.Location = New System.Drawing.Point(54, 63)
+        Me.PictureBox1.Location = New System.Drawing.Point(53, 63)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(277, 249)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -47,28 +47,30 @@ Partial Class LoginPage
         '
         Me.tbUsername.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.tbUsername.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.tbUsername.Location = New System.Drawing.Point(390, 104)
+        Me.tbUsername.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.tbUsername.Location = New System.Drawing.Point(375, 95)
+        Me.tbUsername.Multiline = True
         Me.tbUsername.Name = "tbUsername"
-        Me.tbUsername.Size = New System.Drawing.Size(163, 22)
+        Me.tbUsername.Size = New System.Drawing.Size(230, 27)
         Me.tbUsername.TabIndex = 1
         '
         'LBLuser
         '
         Me.LBLuser.AutoSize = True
-        Me.LBLuser.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LBLuser.Location = New System.Drawing.Point(387, 81)
+        Me.LBLuser.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.0!)
+        Me.LBLuser.Location = New System.Drawing.Point(372, 72)
         Me.LBLuser.Name = "LBLuser"
-        Me.LBLuser.Size = New System.Drawing.Size(77, 18)
+        Me.LBLuser.Size = New System.Drawing.Size(83, 17)
         Me.LBLuser.TabIndex = 2
         Me.LBLuser.Text = "Username"
         '
         'LBLpass
         '
         Me.LBLpass.AutoSize = True
-        Me.LBLpass.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LBLpass.Location = New System.Drawing.Point(387, 148)
+        Me.LBLpass.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.0!)
+        Me.LBLpass.Location = New System.Drawing.Point(372, 139)
         Me.LBLpass.Name = "LBLpass"
-        Me.LBLpass.Size = New System.Drawing.Size(75, 18)
+        Me.LBLpass.Size = New System.Drawing.Size(80, 17)
         Me.LBLpass.TabIndex = 3
         Me.LBLpass.Text = "Password"
         '
@@ -76,42 +78,48 @@ Partial Class LoginPage
         '
         Me.tbPassword.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.tbPassword.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.tbPassword.Location = New System.Drawing.Point(391, 171)
+        Me.tbPassword.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.tbPassword.Location = New System.Drawing.Point(376, 162)
+        Me.tbPassword.Multiline = True
         Me.tbPassword.Name = "tbPassword"
         Me.tbPassword.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.tbPassword.Size = New System.Drawing.Size(163, 22)
+        Me.tbPassword.Size = New System.Drawing.Size(230, 27)
         Me.tbPassword.TabIndex = 4
         '
         'btnClear
         '
         Me.btnClear.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.btnClear.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnClear.Location = New System.Drawing.Point(390, 211)
+        Me.btnClear.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnClear.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.0!)
+        Me.btnClear.Location = New System.Drawing.Point(376, 213)
         Me.btnClear.Name = "btnClear"
-        Me.btnClear.Size = New System.Drawing.Size(75, 37)
+        Me.btnClear.Size = New System.Drawing.Size(100, 40)
         Me.btnClear.TabIndex = 8
         Me.btnClear.Text = "Clear"
         Me.btnClear.UseVisualStyleBackColor = False
         '
-        'btnLogin
-        '
-        Me.btnLogin.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.btnLogin.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnLogin.Location = New System.Drawing.Point(478, 211)
-        Me.btnLogin.Name = "btnLogin"
-        Me.btnLogin.Size = New System.Drawing.Size(75, 37)
-        Me.btnLogin.TabIndex = 9
-        Me.btnLogin.Text = "Login"
-        Me.btnLogin.UseVisualStyleBackColor = False
-        '
         'btnChangePassword
         '
-        Me.btnChangePassword.Location = New System.Drawing.Point(390, 263)
+        Me.btnChangePassword.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnChangePassword.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.0!)
+        Me.btnChangePassword.Location = New System.Drawing.Point(377, 272)
         Me.btnChangePassword.Name = "btnChangePassword"
-        Me.btnChangePassword.Size = New System.Drawing.Size(164, 35)
+        Me.btnChangePassword.Size = New System.Drawing.Size(229, 40)
         Me.btnChangePassword.TabIndex = 10
         Me.btnChangePassword.Text = "Change Password"
         Me.btnChangePassword.UseVisualStyleBackColor = True
+        '
+        'btnLogin
+        '
+        Me.btnLogin.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.btnLogin.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnLogin.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.0!)
+        Me.btnLogin.Location = New System.Drawing.Point(505, 213)
+        Me.btnLogin.Name = "btnLogin"
+        Me.btnLogin.Size = New System.Drawing.Size(100, 40)
+        Me.btnLogin.TabIndex = 9
+        Me.btnLogin.Text = "Login"
+        Me.btnLogin.UseVisualStyleBackColor = False
         '
         'LoginPage
         '
@@ -151,6 +159,6 @@ Partial Class LoginPage
 
 
     Friend WithEvents btnClear As Button
-    Friend WithEvents btnLogin As Button
     Friend WithEvents btnChangePassword As Button
+    Friend WithEvents btnLogin As Button
 End Class

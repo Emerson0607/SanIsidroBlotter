@@ -39,36 +39,36 @@ Partial Class register
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.0!)
         Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(46, Byte), Integer))
-        Me.Label1.Location = New System.Drawing.Point(376, 110)
+        Me.Label1.Location = New System.Drawing.Point(377, 97)
         Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(80, 18)
+        Me.Label1.Size = New System.Drawing.Size(83, 17)
         Me.Label1.TabIndex = 31
         Me.Label1.Text = "Username"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.0!)
         Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(46, Byte), Integer))
-        Me.Label2.Location = New System.Drawing.Point(350, 165)
+        Me.Label2.Location = New System.Drawing.Point(377, 159)
         Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(106, 18)
+        Me.Label2.Size = New System.Drawing.Size(109, 17)
         Me.Label2.TabIndex = 32
         Me.Label2.Text = "Old Password"
         '
         'Password
         '
         Me.Password.AutoSize = True
-        Me.Password.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Password.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.0!)
         Me.Password.ForeColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(46, Byte), Integer))
-        Me.Password.Location = New System.Drawing.Point(344, 214)
+        Me.Password.Location = New System.Drawing.Point(377, 222)
         Me.Password.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Password.Name = "Password"
-        Me.Password.Size = New System.Drawing.Size(112, 18)
+        Me.Password.Size = New System.Drawing.Size(116, 17)
         Me.Password.TabIndex = 27
         Me.Password.Text = "New Password"
         '
@@ -76,19 +76,24 @@ Partial Class register
         '
         Me.tbOldPassword.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.tbOldPassword.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.tbOldPassword.Location = New System.Drawing.Point(467, 161)
+        Me.tbOldPassword.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.tbOldPassword.Location = New System.Drawing.Point(380, 179)
+        Me.tbOldPassword.Multiline = True
         Me.tbOldPassword.Name = "tbOldPassword"
-        Me.tbOldPassword.Size = New System.Drawing.Size(163, 22)
+        Me.tbOldPassword.Size = New System.Drawing.Size(230, 27)
         Me.tbOldPassword.TabIndex = 33
         '
         'tbUsername
         '
         Me.tbUsername.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.tbUsername.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.tbUsername.Location = New System.Drawing.Point(467, 110)
+        Me.tbUsername.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.tbUsername.Enabled = False
+        Me.tbUsername.Location = New System.Drawing.Point(380, 117)
+        Me.tbUsername.Multiline = True
         Me.tbUsername.Name = "tbUsername"
         Me.tbUsername.ReadOnly = True
-        Me.tbUsername.Size = New System.Drawing.Size(163, 22)
+        Me.tbUsername.Size = New System.Drawing.Size(230, 27)
         Me.tbUsername.TabIndex = 34
         Me.tbUsername.Text = "admin"
         '
@@ -96,29 +101,32 @@ Partial Class register
         '
         Me.tbNewPassword.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.tbNewPassword.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.tbNewPassword.Location = New System.Drawing.Point(467, 214)
+        Me.tbNewPassword.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.tbNewPassword.Location = New System.Drawing.Point(380, 242)
+        Me.tbNewPassword.Multiline = True
         Me.tbNewPassword.Name = "tbNewPassword"
-        Me.tbNewPassword.Size = New System.Drawing.Size(163, 22)
+        Me.tbNewPassword.Size = New System.Drawing.Size(230, 27)
         Me.tbNewPassword.TabIndex = 36
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.0!)
         Me.Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(46, Byte), Integer))
-        Me.Label3.Location = New System.Drawing.Point(420, 53)
+        Me.Label3.Location = New System.Drawing.Point(427, 63)
         Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(136, 18)
+        Me.Label3.Size = New System.Drawing.Size(140, 17)
         Me.Label3.TabIndex = 37
         Me.Label3.Text = "Change Password"
         '
         'btnRegister
         '
         Me.btnRegister.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.btnRegister.Location = New System.Drawing.Point(555, 265)
+        Me.btnRegister.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.0!)
+        Me.btnRegister.Location = New System.Drawing.Point(510, 297)
         Me.btnRegister.Name = "btnRegister"
-        Me.btnRegister.Size = New System.Drawing.Size(75, 37)
+        Me.btnRegister.Size = New System.Drawing.Size(100, 40)
         Me.btnRegister.TabIndex = 38
         Me.btnRegister.Text = "Submit"
         Me.btnRegister.UseVisualStyleBackColor = False
@@ -136,7 +144,7 @@ Partial Class register
         'PictureBox2
         '
         Me.PictureBox2.Image = Global.SanIsidroBlotter.My.Resources.Resources.SanIsidroLogo
-        Me.PictureBox2.Location = New System.Drawing.Point(40, 53)
+        Me.PictureBox2.Location = New System.Drawing.Point(53, 63)
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.Size = New System.Drawing.Size(277, 249)
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -159,9 +167,10 @@ Partial Class register
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Password)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
         Me.Name = "register"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "register"
+        Me.Text = "Change Password"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)

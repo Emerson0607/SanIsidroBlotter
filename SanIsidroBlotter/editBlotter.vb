@@ -207,7 +207,7 @@ Public Class editBlotter
         Try
             dbConn.Open()
             Dim query As String
-            query = "Select reportDate, incidentType, incidentDT, incidentLocation, incidentDetails, numberCall from incidentBlotter where id = '" & selectedID & "'"
+            query = "Select id, reportDate, incidentType, incidentDT, incidentLocation, incidentDetails, numberCall from incidentBlotter where id = '" & selectedID & "'"
             'query = "Select * FROM complainantblotter, incidentblotter, suspectblotter, victimblotter Where complainantblotter.id = '" & id.SelectedItem _
             '    & "' and incidentblotter.id = '" & id.SelectedItem & "' and suspectblotter.id = '" & id.SelectedItem & "' and victimblotter.id = '" & id.SelectedItem & "'"
 
@@ -215,6 +215,7 @@ Public Class editBlotter
             READER = Command.ExecuteReader
             While READER.Read
                 'read database and pass the values from field into text box
+                id.Text = READER.GetString("id")
                 reportDate.Text = READER.GetString("reportDate")
                 incidentType.Text = READER.GetString("incidentType")
                 incidentDT.Text = READER.GetString("incidentDT")
