@@ -94,7 +94,7 @@ Public Class AgreeMenu
             MessageBox.Show("Select ID to delete!")
         Else
 
-            delete("DELETE FROM aggreementBlotter Where id = '" & id.SelectedItem & "'")
+            delete("DELETE FROM agreement Where id = '" & id.SelectedItem & "'")
             MessageBox.Show("Deleted Successfully")
             Me.id.Items.Clear()
 
@@ -117,5 +117,11 @@ Public Class AgreeMenu
         Me.Refresh()
     End Sub
 
+    Private Sub search_TextChanged(sender As Object, e As EventArgs) Handles search.TextChanged
+        reloadAgreement("SELECT  id,  agreementDate, complainant, victim, suspect, witness FROM agreement where id LIKE '%" & search.Text _
+               & "%' Or  agreementDate LIKE '%" & search.Text & "%' Or complainant LIKE '%" & search.Text _
+               & "%' Or  victim LIKE '%" & search.Text & "%' Or suspect LIKE '%" & search.Text & "%'  Or witness LIKE '%" & search.Text & "%'", DataGridView1)
 
+
+    End Sub
 End Class
