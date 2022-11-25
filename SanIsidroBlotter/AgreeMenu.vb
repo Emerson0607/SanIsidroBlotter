@@ -69,9 +69,6 @@ Public Class AgreeMenu
         Me.Refresh()
     End Sub
 
-
-
-
     Private Sub btnAdd_Click(sender As Object, e As EventArgs) Handles btnAdd.Click
         Me.Hide()
         Dim MainForm As New CreateAgree
@@ -123,5 +120,28 @@ Public Class AgreeMenu
                & "%' Or  victim LIKE '%" & search.Text & "%' Or suspect LIKE '%" & search.Text & "%'  Or witness LIKE '%" & search.Text & "%'", DataGridView1)
 
 
+    End Sub
+
+    Private Sub btnEdit_Click(sender As Object, e As EventArgs) Handles btnEdit.Click
+        selectedIDagree = id.SelectedItem
+        If String.IsNullOrWhiteSpace(selectedIDagree) Then
+            MessageBox.Show("Select ID to edit!")
+        Else Me.Hide()
+            Dim MainForm As New editAgree
+            MainForm.ShowDialog()
+            Me.Show()
+        End If
+    End Sub
+
+    Private Sub btnView_Click(sender As Object, e As EventArgs) Handles btnView.Click
+        selectedIDagree = id.SelectedItem
+        If String.IsNullOrWhiteSpace(selectedIDagree) Then
+            MessageBox.Show("Select ID to view!")
+        Else
+            Me.Hide()
+            Dim MainForm As New viewAgree
+            MainForm.ShowDialog()
+            Me.Show()
+        End If
     End Sub
 End Class

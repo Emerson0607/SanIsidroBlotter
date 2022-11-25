@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class editAgree
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,257 +20,219 @@ Partial Class editAgree
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.TBagree = New System.Windows.Forms.TextBox()
-        Me.GBvicdetail = New System.Windows.Forms.GroupBox()
-        Me.GBagree = New System.Windows.Forms.GroupBox()
+        Me.id = New System.Windows.Forms.ComboBox()
+        Me.tbDate = New System.Windows.Forms.DateTimePicker()
         Me.btnSave = New System.Windows.Forms.Button()
-        Me.TBid = New System.Windows.Forms.TextBox()
-        Me.GBid = New System.Windows.Forms.GroupBox()
-        Me.DTagreement = New System.Windows.Forms.DateTimePicker()
-        Me.GBdate = New System.Windows.Forms.GroupBox()
-        Me.TBoffice = New System.Windows.Forms.TextBox()
-        Me.GBoffice = New System.Windows.Forms.GroupBox()
-        Me.TBloc = New System.Windows.Forms.TextBox()
-        Me.TBcomp = New System.Windows.Forms.TextBox()
-        Me.GBcomp = New System.Windows.Forms.GroupBox()
-        Me.TBvictim = New System.Windows.Forms.TextBox()
-        Me.GBvictim = New System.Windows.Forms.GroupBox()
-        Me.TBsuspect = New System.Windows.Forms.TextBox()
-        Me.GBsuspect = New System.Windows.Forms.GroupBox()
-        Me.TBwitness = New System.Windows.Forms.TextBox()
-        Me.GBwitness = New System.Windows.Forms.GroupBox()
-        Me.GBloc = New System.Windows.Forms.GroupBox()
-        Me.GBinci = New System.Windows.Forms.GroupBox()
-        Me.GBvicdetail.SuspendLayout()
-        Me.GBagree.SuspendLayout()
-        Me.GBid.SuspendLayout()
-        Me.GBdate.SuspendLayout()
-        Me.GBoffice.SuspendLayout()
-        Me.GBcomp.SuspendLayout()
-        Me.GBvictim.SuspendLayout()
-        Me.GBsuspect.SuspendLayout()
-        Me.GBwitness.SuspendLayout()
-        Me.GBloc.SuspendLayout()
-        Me.GBinci.SuspendLayout()
+        Me.Label10 = New System.Windows.Forms.Label()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.tbOffice = New System.Windows.Forms.TextBox()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.tbLocation = New System.Windows.Forms.TextBox()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.tbWname = New System.Windows.Forms.TextBox()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.tbSname = New System.Windows.Forms.TextBox()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.tbVname = New System.Windows.Forms.TextBox()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.tbCname = New System.Windows.Forms.TextBox()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.tbAgreement = New System.Windows.Forms.TextBox()
         Me.SuspendLayout()
         '
-        'TBagree
+        'id
         '
-        Me.TBagree.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TBagree.Location = New System.Drawing.Point(6, 23)
-        Me.TBagree.Multiline = True
-        Me.TBagree.Name = "TBagree"
-        Me.TBagree.Size = New System.Drawing.Size(1047, 358)
-        Me.TBagree.TabIndex = 13
+        Me.id.BackColor = System.Drawing.Color.Gainsboro
+        Me.id.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.id.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.id.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.id.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.id.FormattingEnabled = True
+        Me.id.Location = New System.Drawing.Point(29, 85)
+        Me.id.Margin = New System.Windows.Forms.Padding(4)
+        Me.id.Name = "id"
+        Me.id.Size = New System.Drawing.Size(235, 26)
+        Me.id.TabIndex = 104
         '
-        'GBvicdetail
+        'tbDate
         '
-        Me.GBvicdetail.BackColor = System.Drawing.Color.White
-        Me.GBvicdetail.Controls.Add(Me.GBagree)
-        Me.GBvicdetail.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.28571!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GBvicdetail.Location = New System.Drawing.Point(12, 252)
-        Me.GBvicdetail.Name = "GBvicdetail"
-        Me.GBvicdetail.Size = New System.Drawing.Size(1095, 435)
-        Me.GBvicdetail.TabIndex = 16
-        Me.GBvicdetail.TabStop = False
-        Me.GBvicdetail.Text = "Victim Details"
-        '
-        'GBagree
-        '
-        Me.GBagree.Controls.Add(Me.TBagree)
-        Me.GBagree.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.07563!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GBagree.Location = New System.Drawing.Point(17, 42)
-        Me.GBagree.Name = "GBagree"
-        Me.GBagree.Size = New System.Drawing.Size(1059, 387)
-        Me.GBagree.TabIndex = 15
-        Me.GBagree.TabStop = False
-        Me.GBagree.Text = "Ageement Details"
+        Me.tbDate.CalendarFont = New System.Drawing.Font("Verdana", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tbDate.CalendarMonthBackground = System.Drawing.Color.White
+        Me.tbDate.CustomFormat = "yyyy/MM/dd"
+        Me.tbDate.Font = New System.Drawing.Font("Verdana", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tbDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom
+        Me.tbDate.Location = New System.Drawing.Point(312, 83)
+        Me.tbDate.Margin = New System.Windows.Forms.Padding(4)
+        Me.tbDate.MaxDate = New Date(2050, 12, 12, 0, 0, 0, 0)
+        Me.tbDate.MinDate = New Date(1980, 1, 1, 0, 0, 0, 0)
+        Me.tbDate.Name = "tbDate"
+        Me.tbDate.Size = New System.Drawing.Size(242, 24)
+        Me.tbDate.TabIndex = 103
+        Me.tbDate.Value = New Date(2022, 11, 24, 14, 55, 43, 0)
         '
         'btnSave
         '
-        Me.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.System
-        Me.btnSave.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.10084!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnSave.Location = New System.Drawing.Point(1010, 693)
+        Me.btnSave.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.865546!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnSave.Location = New System.Drawing.Point(982, 713)
         Me.btnSave.Name = "btnSave"
-        Me.btnSave.Size = New System.Drawing.Size(100, 50)
-        Me.btnSave.TabIndex = 15
+        Me.btnSave.Size = New System.Drawing.Size(93, 33)
+        Me.btnSave.TabIndex = 102
         Me.btnSave.Text = "Save"
         Me.btnSave.UseVisualStyleBackColor = True
         '
-        'TBid
+        'Label10
         '
-        Me.TBid.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TBid.Location = New System.Drawing.Point(6, 34)
-        Me.TBid.Name = "TBid"
-        Me.TBid.Size = New System.Drawing.Size(236, 25)
-        Me.TBid.TabIndex = 13
+        Me.Label10.AutoSize = True
+        Me.Label10.Location = New System.Drawing.Point(25, 6)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(104, 17)
+        Me.Label10.TabIndex = 101
+        Me.Label10.Text = "Incident Details"
         '
-        'GBid
+        'Label6
         '
-        Me.GBid.Controls.Add(Me.TBid)
-        Me.GBid.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.07563!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GBid.Location = New System.Drawing.Point(17, 42)
-        Me.GBid.Name = "GBid"
-        Me.GBid.Size = New System.Drawing.Size(248, 74)
-        Me.GBid.TabIndex = 15
-        Me.GBid.TabStop = False
-        Me.GBid.Text = "Blotter Entry Number"
+        Me.Label6.AutoSize = True
+        Me.Label6.Location = New System.Drawing.Point(865, 62)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(86, 17)
+        Me.Label6.TabIndex = 100
+        Me.Label6.Text = "Office Name"
         '
-        'DTagreement
+        'tbOffice
         '
-        Me.DTagreement.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.07563!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.DTagreement.Location = New System.Drawing.Point(0, 34)
-        Me.DTagreement.Name = "DTagreement"
-        Me.DTagreement.Size = New System.Drawing.Size(246, 25)
-        Me.DTagreement.TabIndex = 11
-        Me.DTagreement.Value = New Date(2022, 11, 19, 0, 0, 0, 0)
+        Me.tbOffice.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.tbOffice.Location = New System.Drawing.Point(861, 82)
+        Me.tbOffice.Name = "tbOffice"
+        Me.tbOffice.Size = New System.Drawing.Size(236, 22)
+        Me.tbOffice.TabIndex = 99
         '
-        'GBdate
+        'Label7
         '
-        Me.GBdate.BackColor = System.Drawing.Color.White
-        Me.GBdate.Controls.Add(Me.DTagreement)
-        Me.GBdate.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.07563!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GBdate.Location = New System.Drawing.Point(286, 42)
-        Me.GBdate.Name = "GBdate"
-        Me.GBdate.Size = New System.Drawing.Size(248, 74)
-        Me.GBdate.TabIndex = 17
-        Me.GBdate.TabStop = False
-        Me.GBdate.Text = "Agreement Date and Time"
+        Me.Label7.AutoSize = True
+        Me.Label7.Location = New System.Drawing.Point(603, 62)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(135, 17)
+        Me.Label7.TabIndex = 98
+        Me.Label7.Text = "Agreement Location"
         '
-        'TBoffice
+        'tbLocation
         '
-        Me.TBoffice.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TBoffice.Location = New System.Drawing.Point(6, 34)
-        Me.TBoffice.Name = "TBoffice"
-        Me.TBoffice.Size = New System.Drawing.Size(236, 25)
-        Me.TBoffice.TabIndex = 13
+        Me.tbLocation.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.tbLocation.Location = New System.Drawing.Point(595, 82)
+        Me.tbLocation.Name = "tbLocation"
+        Me.tbLocation.Size = New System.Drawing.Size(236, 22)
+        Me.tbLocation.TabIndex = 97
         '
-        'GBoffice
+        'Label8
         '
-        Me.GBoffice.Controls.Add(Me.TBoffice)
-        Me.GBoffice.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.07563!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GBoffice.Location = New System.Drawing.Point(828, 42)
-        Me.GBoffice.Name = "GBoffice"
-        Me.GBoffice.Size = New System.Drawing.Size(248, 74)
-        Me.GBoffice.TabIndex = 18
-        Me.GBoffice.TabStop = False
-        Me.GBoffice.Text = "Office Name"
+        Me.Label8.AutoSize = True
+        Me.Label8.Location = New System.Drawing.Point(319, 62)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(111, 17)
+        Me.Label8.TabIndex = 96
+        Me.Label8.Text = "Agreement Date"
         '
-        'TBloc
+        'Label9
         '
-        Me.TBloc.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TBloc.Location = New System.Drawing.Point(6, 34)
-        Me.TBloc.Name = "TBloc"
-        Me.TBloc.Size = New System.Drawing.Size(236, 25)
-        Me.TBloc.TabIndex = 13
+        Me.Label9.AutoSize = True
+        Me.Label9.Location = New System.Drawing.Point(33, 62)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(140, 17)
+        Me.Label9.TabIndex = 95
+        Me.Label9.Text = "Blotter Entry Number"
         '
-        'TBcomp
+        'Label5
         '
-        Me.TBcomp.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TBcomp.Location = New System.Drawing.Point(6, 34)
-        Me.TBcomp.Name = "TBcomp"
-        Me.TBcomp.Size = New System.Drawing.Size(236, 25)
-        Me.TBcomp.TabIndex = 13
+        Me.Label5.AutoSize = True
+        Me.Label5.Location = New System.Drawing.Point(867, 171)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(97, 17)
+        Me.Label5.TabIndex = 94
+        Me.Label5.Text = "Witness name"
         '
-        'GBcomp
+        'tbWname
         '
-        Me.GBcomp.Controls.Add(Me.TBcomp)
-        Me.GBcomp.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.07563!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GBcomp.Location = New System.Drawing.Point(17, 131)
-        Me.GBcomp.Name = "GBcomp"
-        Me.GBcomp.Size = New System.Drawing.Size(248, 74)
-        Me.GBcomp.TabIndex = 21
-        Me.GBcomp.TabStop = False
-        Me.GBcomp.Text = "Complainant Name"
+        Me.tbWname.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.tbWname.Location = New System.Drawing.Point(861, 191)
+        Me.tbWname.Name = "tbWname"
+        Me.tbWname.Size = New System.Drawing.Size(236, 22)
+        Me.tbWname.TabIndex = 93
         '
-        'TBvictim
+        'Label4
         '
-        Me.TBvictim.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TBvictim.Location = New System.Drawing.Point(6, 34)
-        Me.TBvictim.Name = "TBvictim"
-        Me.TBvictim.Size = New System.Drawing.Size(236, 25)
-        Me.TBvictim.TabIndex = 13
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(603, 171)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(100, 17)
+        Me.Label4.TabIndex = 92
+        Me.Label4.Text = "Suspect Name"
         '
-        'GBvictim
+        'tbSname
         '
-        Me.GBvictim.Controls.Add(Me.TBvictim)
-        Me.GBvictim.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.07563!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GBvictim.Location = New System.Drawing.Point(286, 131)
-        Me.GBvictim.Name = "GBvictim"
-        Me.GBvictim.Size = New System.Drawing.Size(248, 74)
-        Me.GBvictim.TabIndex = 22
-        Me.GBvictim.TabStop = False
-        Me.GBvictim.Text = "Victim Name"
+        Me.tbSname.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.tbSname.Enabled = False
+        Me.tbSname.Location = New System.Drawing.Point(595, 191)
+        Me.tbSname.Name = "tbSname"
+        Me.tbSname.Size = New System.Drawing.Size(236, 22)
+        Me.tbSname.TabIndex = 91
         '
-        'TBsuspect
+        'Label3
         '
-        Me.TBsuspect.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TBsuspect.Location = New System.Drawing.Point(6, 34)
-        Me.TBsuspect.Name = "TBsuspect"
-        Me.TBsuspect.Size = New System.Drawing.Size(236, 25)
-        Me.TBsuspect.TabIndex = 13
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(319, 171)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(86, 17)
+        Me.Label3.TabIndex = 90
+        Me.Label3.Text = "Victim Name"
         '
-        'GBsuspect
+        'tbVname
         '
-        Me.GBsuspect.Controls.Add(Me.TBsuspect)
-        Me.GBsuspect.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.07563!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GBsuspect.Location = New System.Drawing.Point(557, 131)
-        Me.GBsuspect.Name = "GBsuspect"
-        Me.GBsuspect.Size = New System.Drawing.Size(248, 74)
-        Me.GBsuspect.TabIndex = 23
-        Me.GBsuspect.TabStop = False
-        Me.GBsuspect.Text = "Suspect Name"
+        Me.tbVname.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.tbVname.Enabled = False
+        Me.tbVname.Location = New System.Drawing.Point(312, 191)
+        Me.tbVname.Name = "tbVname"
+        Me.tbVname.Size = New System.Drawing.Size(236, 22)
+        Me.tbVname.TabIndex = 89
         '
-        'TBwitness
+        'Label2
         '
-        Me.TBwitness.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TBwitness.Location = New System.Drawing.Point(6, 34)
-        Me.TBwitness.Name = "TBwitness"
-        Me.TBwitness.Size = New System.Drawing.Size(236, 25)
-        Me.TBwitness.TabIndex = 13
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(33, 171)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(127, 17)
+        Me.Label2.TabIndex = 88
+        Me.Label2.Text = "Complainant Name"
         '
-        'GBwitness
+        'tbCname
         '
-        Me.GBwitness.Controls.Add(Me.TBwitness)
-        Me.GBwitness.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.07563!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GBwitness.Location = New System.Drawing.Point(828, 131)
-        Me.GBwitness.Name = "GBwitness"
-        Me.GBwitness.Size = New System.Drawing.Size(248, 74)
-        Me.GBwitness.TabIndex = 24
-        Me.GBwitness.TabStop = False
-        Me.GBwitness.Text = "Witness Name"
+        Me.tbCname.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.tbCname.Enabled = False
+        Me.tbCname.Location = New System.Drawing.Point(28, 191)
+        Me.tbCname.Name = "tbCname"
+        Me.tbCname.Size = New System.Drawing.Size(236, 22)
+        Me.tbCname.TabIndex = 86
         '
-        'GBloc
+        'Label1
         '
-        Me.GBloc.Controls.Add(Me.TBloc)
-        Me.GBloc.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.07563!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GBloc.Location = New System.Drawing.Point(557, 42)
-        Me.GBloc.Name = "GBloc"
-        Me.GBloc.Size = New System.Drawing.Size(248, 74)
-        Me.GBloc.TabIndex = 20
-        Me.GBloc.TabStop = False
-        Me.GBloc.Text = "Agreement Location"
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(36, 279)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(81, 17)
+        Me.Label1.TabIndex = 87
+        Me.Label1.Text = "Agreement "
         '
-        'GBinci
+        'tbAgreement
         '
-        Me.GBinci.BackColor = System.Drawing.Color.White
-        Me.GBinci.Controls.Add(Me.GBwitness)
-        Me.GBinci.Controls.Add(Me.GBsuspect)
-        Me.GBinci.Controls.Add(Me.GBvictim)
-        Me.GBinci.Controls.Add(Me.GBcomp)
-        Me.GBinci.Controls.Add(Me.GBloc)
-        Me.GBinci.Controls.Add(Me.GBoffice)
-        Me.GBinci.Controls.Add(Me.GBdate)
-        Me.GBinci.Controls.Add(Me.GBid)
-        Me.GBinci.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.28571!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GBinci.Location = New System.Drawing.Point(12, 12)
-        Me.GBinci.Name = "GBinci"
-        Me.GBinci.Size = New System.Drawing.Size(1095, 221)
-        Me.GBinci.TabIndex = 14
-        Me.GBinci.TabStop = False
-        Me.GBinci.Text = "Incident Details"
+        Me.tbAgreement.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.tbAgreement.Location = New System.Drawing.Point(28, 308)
+        Me.tbAgreement.Multiline = True
+        Me.tbAgreement.Name = "tbAgreement"
+        Me.tbAgreement.Size = New System.Drawing.Size(1047, 358)
+        Me.tbAgreement.TabIndex = 85
         '
         'editAgree
         '
@@ -278,57 +240,55 @@ Partial Class editAgree
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(1122, 753)
-        Me.Controls.Add(Me.GBvicdetail)
+        Me.Controls.Add(Me.id)
+        Me.Controls.Add(Me.tbDate)
         Me.Controls.Add(Me.btnSave)
-        Me.Controls.Add(Me.GBinci)
+        Me.Controls.Add(Me.Label10)
+        Me.Controls.Add(Me.Label6)
+        Me.Controls.Add(Me.tbOffice)
+        Me.Controls.Add(Me.Label7)
+        Me.Controls.Add(Me.tbLocation)
+        Me.Controls.Add(Me.Label8)
+        Me.Controls.Add(Me.Label9)
+        Me.Controls.Add(Me.Label5)
+        Me.Controls.Add(Me.tbWname)
+        Me.Controls.Add(Me.Label4)
+        Me.Controls.Add(Me.tbSname)
+        Me.Controls.Add(Me.Label3)
+        Me.Controls.Add(Me.tbVname)
+        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.tbCname)
+        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.tbAgreement)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "editAgree"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Edit Aggreement"
-        Me.GBvicdetail.ResumeLayout(False)
-        Me.GBagree.ResumeLayout(False)
-        Me.GBagree.PerformLayout()
-        Me.GBid.ResumeLayout(False)
-        Me.GBid.PerformLayout()
-        Me.GBdate.ResumeLayout(False)
-        Me.GBoffice.ResumeLayout(False)
-        Me.GBoffice.PerformLayout()
-        Me.GBcomp.ResumeLayout(False)
-        Me.GBcomp.PerformLayout()
-        Me.GBvictim.ResumeLayout(False)
-        Me.GBvictim.PerformLayout()
-        Me.GBsuspect.ResumeLayout(False)
-        Me.GBsuspect.PerformLayout()
-        Me.GBwitness.ResumeLayout(False)
-        Me.GBwitness.PerformLayout()
-        Me.GBloc.ResumeLayout(False)
-        Me.GBloc.PerformLayout()
-        Me.GBinci.ResumeLayout(False)
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
 
-    Friend WithEvents TBagree As TextBox
-    Friend WithEvents GBvicdetail As GroupBox
-    Friend WithEvents GBagree As GroupBox
+    Friend WithEvents id As ComboBox
+    Friend WithEvents tbDate As DateTimePicker
     Friend WithEvents btnSave As Button
-    Friend WithEvents TBid As TextBox
-    Friend WithEvents GBid As GroupBox
-    Friend WithEvents DTagreement As DateTimePicker
-    Friend WithEvents GBdate As GroupBox
-    Friend WithEvents TBoffice As TextBox
-    Friend WithEvents GBoffice As GroupBox
-    Friend WithEvents TBloc As TextBox
-    Friend WithEvents TBcomp As TextBox
-    Friend WithEvents GBcomp As GroupBox
-    Friend WithEvents TBvictim As TextBox
-    Friend WithEvents GBvictim As GroupBox
-    Friend WithEvents TBsuspect As TextBox
-    Friend WithEvents GBsuspect As GroupBox
-    Friend WithEvents TBwitness As TextBox
-    Friend WithEvents GBwitness As GroupBox
-    Friend WithEvents GBloc As GroupBox
-    Friend WithEvents GBinci As GroupBox
+    Friend WithEvents Label10 As Label
+    Friend WithEvents Label6 As Label
+    Friend WithEvents tbOffice As TextBox
+    Friend WithEvents Label7 As Label
+    Friend WithEvents tbLocation As TextBox
+    Friend WithEvents Label8 As Label
+    Friend WithEvents Label9 As Label
+    Friend WithEvents Label5 As Label
+    Friend WithEvents tbWname As TextBox
+    Friend WithEvents Label4 As Label
+    Friend WithEvents tbSname As TextBox
+    Friend WithEvents Label3 As Label
+    Friend WithEvents tbVname As TextBox
+    Friend WithEvents Label2 As Label
+    Friend WithEvents tbCname As TextBox
+    Friend WithEvents Label1 As Label
+    Friend WithEvents tbAgreement As TextBox
 End Class

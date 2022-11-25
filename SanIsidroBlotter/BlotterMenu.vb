@@ -30,8 +30,9 @@ Public Class BlotterMenu
     End Sub
 
     Private Sub btnEdit_Click_1(sender As Object, e As EventArgs) Handles btnEdit.Click
+        selectedID = id.SelectedItem
         If String.IsNullOrWhiteSpace(selectedID) Then
-            MessageBox.Show("Select ID to view!")
+            MessageBox.Show("Select ID to edit!")
         Else Me.Hide()
             Dim MainForm As New editBlotter
             MainForm.ShowDialog()
