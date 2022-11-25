@@ -111,6 +111,7 @@ Partial Class viewBlotter
         '
         'vGender
         '
+        Me.vGender.Enabled = False
         Me.vGender.FormattingEnabled = True
         Me.vGender.Items.AddRange(New Object() {"Male", "Female"})
         Me.vGender.Location = New System.Drawing.Point(561, 57)
@@ -247,6 +248,7 @@ Partial Class viewBlotter
         'sContactNumber
         '
         Me.sContactNumber.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.sContactNumber.Enabled = False
         Me.sContactNumber.Location = New System.Drawing.Point(23, 133)
         Me.sContactNumber.Name = "sContactNumber"
         Me.sContactNumber.Size = New System.Drawing.Size(236, 27)
@@ -264,6 +266,7 @@ Partial Class viewBlotter
         'sBday
         '
         Me.sBday.CustomFormat = "MM/dd/yyyy"
+        Me.sBday.Enabled = False
         Me.sBday.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.07563!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.sBday.Format = System.Windows.Forms.DateTimePickerFormat.Custom
         Me.sBday.Location = New System.Drawing.Point(828, 67)
@@ -302,6 +305,7 @@ Partial Class viewBlotter
         'numberCall
         '
         Me.numberCall.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.numberCall.Enabled = False
         Me.numberCall.Location = New System.Drawing.Point(561, 136)
         Me.numberCall.Name = "numberCall"
         Me.numberCall.Size = New System.Drawing.Size(236, 27)
@@ -310,6 +314,7 @@ Partial Class viewBlotter
         'incidentDetails
         '
         Me.incidentDetails.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.incidentDetails.Enabled = False
         Me.incidentDetails.Location = New System.Drawing.Point(287, 136)
         Me.incidentDetails.Name = "incidentDetails"
         Me.incidentDetails.Size = New System.Drawing.Size(244, 27)
@@ -318,6 +323,7 @@ Partial Class viewBlotter
         'incidentLocation
         '
         Me.incidentLocation.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.incidentLocation.Enabled = False
         Me.incidentLocation.Location = New System.Drawing.Point(26, 136)
         Me.incidentLocation.Name = "incidentLocation"
         Me.incidentLocation.Size = New System.Drawing.Size(236, 27)
@@ -326,6 +332,7 @@ Partial Class viewBlotter
         'incidentDT
         '
         Me.incidentDT.CustomFormat = "MM/dd/yyyy"
+        Me.incidentDT.Enabled = False
         Me.incidentDT.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.07563!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.incidentDT.Format = System.Windows.Forms.DateTimePickerFormat.Custom
         Me.incidentDT.Location = New System.Drawing.Point(829, 72)
@@ -346,6 +353,7 @@ Partial Class viewBlotter
         'incidentType
         '
         Me.incidentType.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.incidentType.Enabled = False
         Me.incidentType.Location = New System.Drawing.Point(561, 72)
         Me.incidentType.Name = "incidentType"
         Me.incidentType.Size = New System.Drawing.Size(236, 27)
@@ -354,6 +362,7 @@ Partial Class viewBlotter
         'reportDate
         '
         Me.reportDate.CustomFormat = "MM/dd/yyyy"
+        Me.reportDate.Enabled = False
         Me.reportDate.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.07563!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.reportDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom
         Me.reportDate.Location = New System.Drawing.Point(287, 73)
@@ -406,6 +415,7 @@ Partial Class viewBlotter
         'vContactNumber
         '
         Me.vContactNumber.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.vContactNumber.Enabled = False
         Me.vContactNumber.Location = New System.Drawing.Point(23, 131)
         Me.vContactNumber.Name = "vContactNumber"
         Me.vContactNumber.Size = New System.Drawing.Size(236, 27)
@@ -414,6 +424,7 @@ Partial Class viewBlotter
         'vAddress
         '
         Me.vAddress.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.vAddress.Enabled = False
         Me.vAddress.Location = New System.Drawing.Point(286, 131)
         Me.vAddress.Name = "vAddress"
         Me.vAddress.Size = New System.Drawing.Size(776, 27)
@@ -422,6 +433,7 @@ Partial Class viewBlotter
         'vBday
         '
         Me.vBday.CustomFormat = "MM/dd/yyyy"
+        Me.vBday.Enabled = False
         Me.vBday.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.07563!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.vBday.Format = System.Windows.Forms.DateTimePickerFormat.Custom
         Me.vBday.Location = New System.Drawing.Point(828, 59)
@@ -433,6 +445,7 @@ Partial Class viewBlotter
         'vCitizenship
         '
         Me.vCitizenship.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.vCitizenship.Enabled = False
         Me.vCitizenship.Location = New System.Drawing.Point(286, 57)
         Me.vCitizenship.Name = "vCitizenship"
         Me.vCitizenship.Size = New System.Drawing.Size(246, 27)
@@ -441,6 +454,7 @@ Partial Class viewBlotter
         'vFullname
         '
         Me.vFullname.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.vFullname.Enabled = False
         Me.vFullname.Location = New System.Drawing.Point(23, 57)
         Me.vFullname.Name = "vFullname"
         Me.vFullname.Size = New System.Drawing.Size(236, 27)
@@ -449,6 +463,7 @@ Partial Class viewBlotter
         'id
         '
         Me.id.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.id.Enabled = False
         Me.id.Location = New System.Drawing.Point(26, 72)
         Me.id.Name = "id"
         Me.id.Size = New System.Drawing.Size(236, 27)
@@ -489,6 +504,7 @@ Partial Class viewBlotter
         'sAddress
         '
         Me.sAddress.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.sAddress.Enabled = False
         Me.sAddress.Location = New System.Drawing.Point(286, 133)
         Me.sAddress.Name = "sAddress"
         Me.sAddress.Size = New System.Drawing.Size(776, 27)
@@ -496,6 +512,7 @@ Partial Class viewBlotter
         '
         'sGender
         '
+        Me.sGender.Enabled = False
         Me.sGender.FormattingEnabled = True
         Me.sGender.Items.AddRange(New Object() {"Male", "Female"})
         Me.sGender.Location = New System.Drawing.Point(561, 66)
@@ -506,6 +523,7 @@ Partial Class viewBlotter
         'sCitizenship
         '
         Me.sCitizenship.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.sCitizenship.Enabled = False
         Me.sCitizenship.Location = New System.Drawing.Point(286, 67)
         Me.sCitizenship.Name = "sCitizenship"
         Me.sCitizenship.Size = New System.Drawing.Size(246, 27)
@@ -514,6 +532,7 @@ Partial Class viewBlotter
         'sFullname
         '
         Me.sFullname.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.sFullname.Enabled = False
         Me.sFullname.Location = New System.Drawing.Point(23, 67)
         Me.sFullname.Name = "sFullname"
         Me.sFullname.Size = New System.Drawing.Size(236, 27)
@@ -545,6 +564,7 @@ Partial Class viewBlotter
         'cAddress
         '
         Me.cAddress.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.cAddress.Enabled = False
         Me.cAddress.Location = New System.Drawing.Point(286, 131)
         Me.cAddress.Name = "cAddress"
         Me.cAddress.Size = New System.Drawing.Size(776, 27)
@@ -553,6 +573,7 @@ Partial Class viewBlotter
         'cContactNumber
         '
         Me.cContactNumber.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.cContactNumber.Enabled = False
         Me.cContactNumber.Location = New System.Drawing.Point(26, 131)
         Me.cContactNumber.Name = "cContactNumber"
         Me.cContactNumber.Size = New System.Drawing.Size(236, 27)
@@ -561,6 +582,7 @@ Partial Class viewBlotter
         'cbDay
         '
         Me.cbDay.CustomFormat = "MM/dd/yyyy"
+        Me.cbDay.Enabled = False
         Me.cbDay.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.07563!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cbDay.Format = System.Windows.Forms.DateTimePickerFormat.Custom
         Me.cbDay.Location = New System.Drawing.Point(829, 64)
@@ -571,6 +593,7 @@ Partial Class viewBlotter
         '
         'cGender
         '
+        Me.cGender.Enabled = False
         Me.cGender.FormattingEnabled = True
         Me.cGender.Items.AddRange(New Object() {"Male", "Female"})
         Me.cGender.Location = New System.Drawing.Point(564, 63)
@@ -581,6 +604,7 @@ Partial Class viewBlotter
         'cCitizenship
         '
         Me.cCitizenship.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.cCitizenship.Enabled = False
         Me.cCitizenship.Location = New System.Drawing.Point(287, 64)
         Me.cCitizenship.Name = "cCitizenship"
         Me.cCitizenship.Size = New System.Drawing.Size(245, 27)
@@ -589,6 +613,7 @@ Partial Class viewBlotter
         'cFullname
         '
         Me.cFullname.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.cFullname.Enabled = False
         Me.cFullname.Location = New System.Drawing.Point(26, 64)
         Me.cFullname.Name = "cFullname"
         Me.cFullname.Size = New System.Drawing.Size(236, 27)

@@ -91,11 +91,11 @@ Module Module1
             With dtg
                 .datasource = dt
                 .columns(0).headertext = "Entry ID"
-                .columns(1).headertext = "Incident type"
-                .columns(2).headertext = "Incident Location"
-                .columns(3).headertext = "Incident Date"
-                .columns(4).headertext = "Agreement Date"
-                .columns(5).headertext = "Complainant"
+                .columns(1).headertext = "Agreement Date"
+                .columns(2).headertext = "Complainant"
+                .columns(3).headertext = "Victim"
+                .columns(4).headertext = "Suspect"
+                .columns(5).headertext = "witness"
                 .Columns(0).Width = 40
                 .Columns(1).Width = 60
                 .Columns(2).Width = 60
