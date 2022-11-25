@@ -1,7 +1,9 @@
 ﻿Imports System.ComponentModel
-
+Imports MySql.Data.MySqlClient
 Public Class BlotterMenu
-
+    Dim dbConn As MySqlConnection
+    Dim adapter As MySqlDataAdapter
+    Dim ds As DataSet
     Private Sub BlotterMenu_Closing(sender As Object, e As CancelEventArgs) Handles Me.Closing
         MenuPage.Show()
 
@@ -38,5 +40,60 @@ Public Class BlotterMenu
 
         Dim FontBold As New Font(DataGridView1.ColumnHeadersDefaultCellStyle.Font, FontStyle.Bold)
         Me.DataGridView1.ColumnHeadersDefaultCellStyle.Font = FontBold
+
+
+        Dim dbConn = New MySqlConnection
+        dbConn.ConnectionString = "server=localhost;user id=root;port=3306;database=blotter;Persist Security Info=True;Convert Zero Datetime=True "
+
+        Try
+            dbConn.Open()
+            Dim sql1 = String.Format("Select id from incidentBlotter where id > 0")
+
+            adapter = New MySqlDataAdapter(sql1, dbConn)
+
+            ds = New DataSet
+
+            adapter.Fill(ds, "incidentBlotter")
+            adapter.Dispose()
+
+            If ds.Tables("incidentBlotter").Rows.Count > 0 Then
+                Me.id.Items.Clear()
+                Dim i As Integer
+                For i = 0 To ds.Tables("incidentBlotter").Rows.Count - 1
+                    With Me.id
+                        .Items.Add(ds.Tables("incidentBlotter").Rows(i).Item("id"))
+                    End With
+                Next
+            Else
+                MessageBox.Show("No data")
+            End If
+        Catch ex As Exception
+            MessageBox.Show("Error")
+        Finally
+            dbConn.Close()
+        End Try
+
+    End Sub
+
+    Private Sub id_SelectedIndexChanged(sender As Object, e As EventArgs) Handles id.SelectedIndexChanged
+        reload("SELECT incidentBlotter.id, incidentBlotter.incidentType, incidentBlotter.incidentLocation, incidentBlotter.incidentDT, complainantBlotter.fullname FROM incidentBlotter INNER JOIN complainantBlotter ON incidentBlotter.id = complainantBlotter.id where incidentBlotter.id = '" & id.SelectedItem & "'", DataGridView1)
+
+    End Sub
+
+    Private Sub btnRefresh_Click(sender As Object, e As EventArgs) Handles btnRefresh.Click
+        reload("SELECT incidentBlotter.id, incidentBlotter.incidentType, incidentBlotter.incidentLocation, incidentBlotter.incidentDT, complainantBlotter.fullname FROM incidentBlotter INNER JOIN complainantBlotter ON incidentBlotter.id = complainantBlotter.id ORDER BY incidentBlotter.id;  ", DataGridView1)
+        search.Clear()
+        id.SelectedIndex = -1
+        Me.Refresh()
+    End Sub
+
+    Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles search.TextChanged
+
+        reload("SELECT incidentBlotter.id, incidentBlotter.incidentType, incidentBlotter.incidentLocation, incidentBlotter.incidentDT, complainantBlotter.fullname FROM incidentBlotter INNER JOIN complainantBlotter ON incidentBlotter.id = complainantBlotter.id where incidentBlotter.id LIKE '%" & search.Text _
+               & "%' Or incidentBlotter.incidentType LIKE '%" & search.Text & "%' Or incidentBlotter.incidentLocation LIKE '%" & search.Text _
+               & "%' Or  incidentBlotter.incidentDT LIKE '%" & search.Text & "%' Or complainantBlotter.fullname LIKE '%" & search.Text & "%'", DataGridView1)
+
+
+
     End Sub
 End Class

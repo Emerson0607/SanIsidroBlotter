@@ -18,20 +18,21 @@ Public Class editBlotter
             MessageBox.Show("Only have 3 call")
         Else
             Try
-                create("INSERT INTO incidentBlotter (id, reportDate, incidentType, incidentDT, incidentLocation, incidentDetails, numberCall) VALUES('" & id.Text _
-              & "','" & reportDate.Value.Date & "','" & incidentType.Text & "', '" & incidentDT.Value.Date & "', '" & incidentLocation.Text & "', '" & incidentDetails.Text & "', '" & numberCall.Text & "')")
+                updates("UPDATE incidentBlotter SET reportDate = '" & reportDate.Value.Date.ToString("yyyy/MM/dd") & "', incidentType = '" & incidentType.Text _
+                & "', incidentDT =  '" & incidentDT.Value.Date.ToString("yyyy/MM/dd") & "', incidentLocation = '" & incidentLocation.Text _
+                & "', incidentDetails = '" & incidentDetails.Text & "', numberCall = '" & numberCall.Text & "' where id = '" & id.SelectedItem & "'")
 
-                create("INSERT INTO complainantBlotter (id, fullname, Citizenship, gender, bDay, contactNumber, address) VALUES('" & id.Text _
-              & "','" & cFullname.Text & "','" & cCitizenship.Text & "', '" & cGender.Text & "', '" & cbDay.Value.Date & "', '" & cContactNumber.Text & "', '" & cAddress.Text & "')")
+                updates("UPDATE complainantBlotter SET fullname = '" & cFullname.Text & "', Citizenship = '" & cCitizenship.Text & "', gender ='" & cGender.Text _
+                & "', bDay = '" & cbDay.Value.Date.ToString("yyyy/MM/dd") & "', contactNumber = '" & cContactNumber.Text & "', address = '" & cAddress.Text & "'")
 
-                create("INSERT INTO victimBlotter (id, fullname, Citizenship, gender, bDay, contactNumber, address) VALUES('" & id.Text _
-              & "','" & vFullname.Text & "','" & vCitizenship.Text & "', '" & vGender.Text & "', '" & vBday.Value.Date & "', '" & vContactNumber.Text & "', '" & vAddress.Text & "')")
+                updates("UPDATE victimBlotter SET fullname = '" & vFullname.Text & "', Citizenship = '" & vCitizenship.Text & "', gender ='" & vGender.Text _
+                & "', bDay = '" & vBday.Value.Date.ToString("yyyy/MM/dd") & "', contactNumber = '" & vContactNumber.Text & "', address = '" & vAddress.Text & "'")
 
-                create("INSERT INTO suspectBlotter (id, fullname, Citizenship, gender, bDay, contactNumber, address) VALUES('" & id.Text _
-              & "','" & sFullname.Text & "','" & sCitizenship.Text & "', '" & sGender.Text & "', '" & sBday.Value.Date & "', '" & sContactNumber.Text & "', '" & sAddress.Text & "')")
+                updates("UPDATE suspectBlotter SET fullname = '" & sFullname.Text & "', Citizenship = '" & sCitizenship.Text & "', gender ='" & sGender.Text _
+                & "', bDay = '" & sBday.Value.Date.ToString("yyyy/MM/dd") & "', contactNumber = '" & sContactNumber.Text & "', address = '" & sAddress.Text & "'")
 
 
-                MessageBox.Show("Completed! New Blotter Recorded")
+                MessageBox.Show("Blotter Updated!")
 
             Catch ex As Exception
                 MessageBox.Show("Error, you must complete details" & ex.Message.ToString)
@@ -49,22 +50,101 @@ Public Class editBlotter
         Dim READER As MySqlDataReader
         Dim Command As MySqlCommand
 
+        Try
+            dbConn.Open()
+            Dim query As String
+            query = "Select reportDate, incidentType, incidentDT, incidentLocation, incidentDetails, numberCall from incidentBlotter where id = '" & id.SelectedItem & "'"
+            'query = "Select * FROM complainantblotter, incidentblotter, suspectblotter, victimblotter Where complainantblotter.id = '" & id.SelectedItem _
+            '    & "' and incidentblotter.id = '" & id.SelectedItem & "' and suspectblotter.id = '" & id.SelectedItem & "' and victimblotter.id = '" & id.SelectedItem & "'"
 
+            Command = New MySqlCommand(query, dbConn)
+            READER = Command.ExecuteReader
+            While READER.Read
+                'read database and pass the values from field into text box
+                reportDate.Text = READER.GetString("reportDate")
+                incidentType.Text = READER.GetString("incidentType")
+                incidentDT.Text = READER.GetString("incidentDT")
+                incidentLocation.Text = READER.GetString("incidentLocation")
+                incidentDetails.Text = READER.GetString("incidentDetails")
+                numberCall.Text = READER.GetInt32("numberCall")
+            End While
+
+            dbConn.Close()
+
+        Catch ex As Exception
+            MessageBox.Show(ex.Message)
+        End Try
+
+        'for complainant blotter table
 
         Try
             dbConn.Open()
             Dim query As String
-            query = "Select reportDate, incidentType, incidentDT, incidentLocation, incidentDetails, numberCall from incidentBlotter  where id = '" & id.SelectedItem & "'"
+            query = "Select fullname, Citizenship, gender, bDay, contactNumber, address from complainantBlotter where id = '" & id.SelectedItem & "'"
+
             Command = New MySqlCommand(query, dbConn)
             READER = Command.ExecuteReader
             While READER.Read
 
-                reportDate.Text = READER.Item("reportDate").ToString()
-                incidentType.Text = READER.GetString("incidentType")
-                incidentDT.Text = READER.Item("incidentDT").ToString()
-                incidentLocation.Text = READER.GetString("incidentLocation")
-                incidentDetails.Text = READER.GetString("incidentDetails")
-                numberCall.Text = READER.GetInt32("numberCall")
+                'for complainant table
+                cFullname.Text = READER.GetString("fullname")
+                cCitizenship.Text = READER.GetString("Citizenship")
+                cGender.Text = READER.GetString("gender")
+                cbDay.Text = READER.GetString("bDay")
+                cContactNumber.Text = READER.GetString("contactNumber")
+                cAddress.Text = READER.GetString("address")
+
+            End While
+
+            dbConn.Close()
+
+        Catch ex As Exception
+            MessageBox.Show(ex.Message)
+        End Try
+
+        'for for victim table
+        Try
+            dbConn.Open()
+            Dim query As String
+            query = "Select fullname, Citizenship, gender, bDay, contactNumber, address from victimBlotter where id = '" & id.SelectedItem & "'"
+
+            Command = New MySqlCommand(query, dbConn)
+            READER = Command.ExecuteReader
+            While READER.Read
+
+                'for victim table
+                vFullname.Text = READER.GetString("fullname")
+                vCitizenship.Text = READER.GetString("Citizenship")
+                vGender.Text = READER.GetString("gender")
+                vBday.Text = READER.GetString("bDay")
+                vContactNumber.Text = READER.GetString("contactNumber")
+                vAddress.Text = READER.GetString("address")
+
+            End While
+
+            dbConn.Close()
+
+        Catch ex As Exception
+            MessageBox.Show(ex.Message)
+        End Try
+        'for for suspect table
+        Try
+            dbConn.Open()
+            Dim query As String
+            query = "Select fullname, Citizenship, gender, bDay, contactNumber, address from victimBlotter where id = '" & id.SelectedItem & "'"
+
+            Command = New MySqlCommand(query, dbConn)
+            READER = Command.ExecuteReader
+            While READER.Read
+
+                'for suspect table
+                sFullname.Text = READER.GetString("fullname")
+                sCitizenship.Text = READER.GetString("Citizenship")
+                sGender.Text = READER.GetString("gender")
+                sBday.Text = READER.GetString("bDay")
+                sContactNumber.Text = READER.GetString("contactNumber")
+                sAddress.Text = READER.GetString("address")
+
             End While
 
             dbConn.Close()

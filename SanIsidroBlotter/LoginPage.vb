@@ -51,10 +51,6 @@ Public Class LoginPage
 
     End Sub
 
-    Private Sub LoginPage_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
-    End Sub
-
     Private Sub btnChangePassword_Click(sender As Object, e As EventArgs) Handles btnChangePassword.Click
 
         Me.Hide()

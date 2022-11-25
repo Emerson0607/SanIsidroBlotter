@@ -9,7 +9,7 @@ BLOTTER DATABASE QUERY
 
 CREATE TABLE incidentBlotter (
     	id INT NOT NULL PRIMARY KEY,
-    	reportDate DATETIME ,
+    	reportDate DATETIME,
     	incidentType varchar(255) NOT NULL,
     	incidentDT DATE NOT NULL,
     	incidentLocation varchar(255) NOT NULL,
@@ -67,3 +67,11 @@ CREATE TABLE agreementBlotter (
     	witness varchar(255) NOT NULL,
     	agreement varchar(1000) NOT NULL,
 );
+
+
+
+
+SELECT *
+FROM complainantblotter, incidentblotter, suspectblotter, victimblotter
+WHERE complainantblotter.id = incidentblotter.id AND 
+suspectblotter.id = victimblotter.id;
