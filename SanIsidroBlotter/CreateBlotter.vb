@@ -19,7 +19,6 @@
                 create("INSERT INTO incidentBlotter (`id`, `reportDate`, `incidentType`, `incidentDT`, `incidentLocation`, `incidentDetails`, `numberCall`) VALUES('" & id.Text _
                   & "','" & reportDate.Value.Date.ToString("yyyy/MM/dd") & "','" & incidentType.Text & "', '" & incidentDT.Value.Date.ToString("yyyy/MM/dd") & "', '" & incidentLocation.Text & "', '" & incidentDetails.Text & "', '" & numberCall.Text & "')")
 
-
                 create("INSERT INTO complainantBlotter (id, fullname, Citizenship, gender, bDay, contactNumber, address) VALUES('" & id.Text _
               & "','" & cFullname.Text & "','" & cCitizenship.Text & "', '" & cGender.Text & "', '" & cBday.Value.Date.ToString("yyyy/MM/dd") & "', '" & cContactNumber.Text & "', '" & cAddress.Text & "')")
 
@@ -41,5 +40,7 @@
 
     End Sub
 
-  
+    Private Sub CreateBlotter_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
 End Class

@@ -263,7 +263,9 @@ Partial Class viewBlotter
         '
         'sBday
         '
+        Me.sBday.CustomFormat = "MM/dd/yyyy"
         Me.sBday.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.07563!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.sBday.Format = System.Windows.Forms.DateTimePickerFormat.Custom
         Me.sBday.Location = New System.Drawing.Point(828, 67)
         Me.sBday.Name = "sBday"
         Me.sBday.Size = New System.Drawing.Size(246, 25)
@@ -323,7 +325,9 @@ Partial Class viewBlotter
         '
         'incidentDT
         '
+        Me.incidentDT.CustomFormat = "MM/dd/yyyy"
         Me.incidentDT.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.07563!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.incidentDT.Format = System.Windows.Forms.DateTimePickerFormat.Custom
         Me.incidentDT.Location = New System.Drawing.Point(829, 72)
         Me.incidentDT.Name = "incidentDT"
         Me.incidentDT.Size = New System.Drawing.Size(246, 25)
@@ -349,7 +353,9 @@ Partial Class viewBlotter
         '
         'reportDate
         '
+        Me.reportDate.CustomFormat = "MM/dd/yyyy"
         Me.reportDate.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.07563!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.reportDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom
         Me.reportDate.Location = New System.Drawing.Point(287, 73)
         Me.reportDate.Name = "reportDate"
         Me.reportDate.Size = New System.Drawing.Size(245, 25)
@@ -415,7 +421,9 @@ Partial Class viewBlotter
         '
         'vBday
         '
+        Me.vBday.CustomFormat = "MM/dd/yyyy"
         Me.vBday.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.07563!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.vBday.Format = System.Windows.Forms.DateTimePickerFormat.Custom
         Me.vBday.Location = New System.Drawing.Point(828, 59)
         Me.vBday.Name = "vBday"
         Me.vBday.Size = New System.Drawing.Size(246, 25)
@@ -552,7 +560,9 @@ Partial Class viewBlotter
         '
         'cbDay
         '
+        Me.cbDay.CustomFormat = "MM/dd/yyyy"
         Me.cbDay.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.07563!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cbDay.Format = System.Windows.Forms.DateTimePickerFormat.Custom
         Me.cbDay.Location = New System.Drawing.Point(829, 64)
         Me.cbDay.Name = "cbDay"
         Me.cbDay.Size = New System.Drawing.Size(246, 25)

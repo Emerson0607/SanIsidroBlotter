@@ -4,17 +4,22 @@ Public Class BlotterMenu
     Dim dbConn As MySqlConnection
     Dim adapter As MySqlDataAdapter
     Dim ds As DataSet
+
     Private Sub BlotterMenu_Closing(sender As Object, e As CancelEventArgs) Handles Me.Closing
         MenuPage.Show()
 
     End Sub
 
-
     Private Sub btnView_Click(sender As Object, e As EventArgs) Handles btnView.Click
-        Me.Hide()
-        Dim MainForm As New viewBlotter
-        MainForm.ShowDialog()
-        Me.Show()
+        selectedID = id.SelectedItem
+        If String.IsNullOrWhiteSpace(selectedID) Then
+            MessageBox.Show("Select ID to view!")
+        Else
+            Me.Hide()
+            Dim MainForm As New viewBlotter
+            MainForm.ShowDialog()
+            Me.Show()
+        End If
     End Sub
 
     Private Sub btnAdd_Click_1(sender As Object, e As EventArgs) Handles btnAdd.Click
@@ -25,10 +30,13 @@ Public Class BlotterMenu
     End Sub
 
     Private Sub btnEdit_Click_1(sender As Object, e As EventArgs) Handles btnEdit.Click
-        Me.Hide()
-        Dim MainForm As New editBlotter
-        MainForm.ShowDialog()
-        Me.Show()
+        If String.IsNullOrWhiteSpace(selectedID) Then
+            MessageBox.Show("Select ID to view!")
+        Else Me.Hide()
+            Dim MainForm As New editBlotter
+            MainForm.ShowDialog()
+            Me.Show()
+        End If
     End Sub
 
 
@@ -72,6 +80,7 @@ Public Class BlotterMenu
         Finally
             dbConn.Close()
         End Try
+        Me.Refresh()
 
     End Sub
 
@@ -95,5 +104,33 @@ Public Class BlotterMenu
 
 
 
+    End Sub
+    Private Sub DataGridView1_CellPainting(sender As Object, e As DataGridViewCellPaintingEventArgs) Handles DataGridView1.CellPainting
+        Dim i As Integer
+
+        For i = -1 To DataGridView1.Columns.Count
+            If e.ColumnIndex = i And e.RowIndex = -1 Then
+                e.AdvancedBorderStyle.All = DataGridViewAdvancedCellBorderStyle.None
+            End If
+        Next
+
+    End Sub
+
+    Private Sub btnDelete_Click(sender As Object, e As EventArgs) Handles btnDelete.Click
+        If String.IsNullOrWhiteSpace(id.SelectedItem) Then
+            MessageBox.Show("Select ID to delete!")
+        Else
+
+            delete("DELETE FROM complainantBlotter Where id = '" & id.SelectedItem & "'")
+            delete("DELETE FROM incidentBlotter Where id = '" & id.SelectedItem & "'")
+            delete("DELETE FROM victimBlotter Where id = '" & id.SelectedItem & "'")
+            delete("DELETE FROM suspectBlotter Where id = '" & id.SelectedItem & "'")
+            MessageBox.Show("Deleted Successfully")
+            Me.id.Items.Clear()
+
+            reload("SELECT incidentBlotter.id, incidentBlotter.incidentType, incidentBlotter.incidentLocation, incidentBlotter.incidentDT, complainantBlotter.fullname FROM incidentBlotter INNER JOIN complainantBlotter ON incidentBlotter.id = complainantBlotter.id ORDER BY incidentBlotter.id;  ", DataGridView1)
+
+
+        End If
     End Sub
 End Class

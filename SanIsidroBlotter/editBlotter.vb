@@ -42,6 +42,7 @@ Public Class editBlotter
         End If
     End Sub
 
+
     Private Sub id_SelectedIndexChanged(sender As Object, e As EventArgs) Handles id.SelectedIndexChanged
 
         dbConn = New MySqlConnection
@@ -50,6 +51,7 @@ Public Class editBlotter
         Dim READER As MySqlDataReader
         Dim Command As MySqlCommand
 
+        'for incident Blotter table
         Try
             dbConn.Open()
             Dim query As String
@@ -127,11 +129,13 @@ Public Class editBlotter
         Catch ex As Exception
             MessageBox.Show(ex.Message)
         End Try
+
+
         'for for suspect table
         Try
             dbConn.Open()
             Dim query As String
-            query = "Select fullname, Citizenship, gender, bDay, contactNumber, address from victimBlotter where id = '" & id.SelectedItem & "'"
+            query = "Select fullname, Citizenship, gender, bDay, contactNumber, address from suspectBlotter where id = '" & id.SelectedItem & "'"
 
             Command = New MySqlCommand(query, dbConn)
             READER = Command.ExecuteReader
@@ -152,6 +156,8 @@ Public Class editBlotter
         Catch ex As Exception
             MessageBox.Show(ex.Message)
         End Try
+
+
 
     End Sub
 
@@ -186,6 +192,7 @@ Public Class editBlotter
         Finally
             dbConn.Close()
         End Try
+
     End Sub
 
 
