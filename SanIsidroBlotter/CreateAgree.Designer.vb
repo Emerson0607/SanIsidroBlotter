@@ -47,6 +47,7 @@ Partial Class CreateAgree
         'tbCname
         '
         Me.tbCname.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.tbCname.Enabled = False
         Me.tbCname.Location = New System.Drawing.Point(41, 213)
         Me.tbCname.Name = "tbCname"
         Me.tbCname.Size = New System.Drawing.Size(236, 22)
@@ -91,6 +92,7 @@ Partial Class CreateAgree
         'tbVname
         '
         Me.tbVname.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.tbVname.Enabled = False
         Me.tbVname.Location = New System.Drawing.Point(325, 213)
         Me.tbVname.Name = "tbVname"
         Me.tbVname.Size = New System.Drawing.Size(236, 22)
@@ -108,6 +110,7 @@ Partial Class CreateAgree
         'tbSname
         '
         Me.tbSname.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.tbSname.Enabled = False
         Me.tbSname.Location = New System.Drawing.Point(608, 213)
         Me.tbSname.Name = "tbSname"
         Me.tbSname.Size = New System.Drawing.Size(236, 22)
@@ -219,10 +222,16 @@ Partial Class CreateAgree
         '
         'id
         '
+        Me.id.BackColor = System.Drawing.Color.Gainsboro
+        Me.id.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.id.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.id.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.id.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.id.FormattingEnabled = True
-        Me.id.Location = New System.Drawing.Point(41, 109)
+        Me.id.Location = New System.Drawing.Point(42, 107)
+        Me.id.Margin = New System.Windows.Forms.Padding(4)
         Me.id.Name = "id"
-        Me.id.Size = New System.Drawing.Size(233, 24)
+        Me.id.Size = New System.Drawing.Size(235, 26)
         Me.id.TabIndex = 84
         '
         'CreateAgree
@@ -262,12 +271,6 @@ Partial Class CreateAgree
 
     End Sub
 
-    Private Sub BTsubmit_Click(sender As Object, e As EventArgs) Handles btnSubmit.Click
-        MessageBox.Show("Report Submitted!", "Success")
-
-
-
-    End Sub
     Friend WithEvents tbCname As TextBox
     Friend WithEvents tbAgreement As TextBox
     Friend WithEvents Label1 As Label
