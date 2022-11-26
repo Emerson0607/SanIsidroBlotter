@@ -48,6 +48,7 @@ Partial Class LoginPage
         Me.tbUsername.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.tbUsername.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.tbUsername.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.tbUsername.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.tbUsername.Location = New System.Drawing.Point(375, 95)
         Me.tbUsername.Multiline = True
         Me.tbUsername.Name = "tbUsername"
@@ -79,6 +80,7 @@ Partial Class LoginPage
         Me.tbPassword.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.tbPassword.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.tbPassword.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.tbPassword.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.tbPassword.Location = New System.Drawing.Point(376, 162)
         Me.tbPassword.Multiline = True
         Me.tbPassword.Name = "tbPassword"

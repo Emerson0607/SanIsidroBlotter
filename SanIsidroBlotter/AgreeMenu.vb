@@ -126,7 +126,8 @@ Public Class AgreeMenu
         selectedIDagree = id.SelectedItem
         If String.IsNullOrWhiteSpace(selectedIDagree) Then
             MessageBox.Show("Select ID to edit!")
-        Else Me.Hide()
+        Else
+            Me.Hide()
             Dim MainForm As New editAgree
             MainForm.ShowDialog()
             Me.Show()

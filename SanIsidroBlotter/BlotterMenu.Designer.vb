@@ -148,6 +148,7 @@ Partial Class BlotterMenu
         '
         Me.search.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.search.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.search.Font = New System.Drawing.Font("Arial Narrow", 9.0!)
         Me.search.Location = New System.Drawing.Point(884, 114)
         Me.search.Multiline = True
         Me.search.Name = "search"

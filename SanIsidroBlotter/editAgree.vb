@@ -72,4 +72,24 @@ Public Class editAgree
         End Try
 
     End Sub
+
+    Private Sub btnSave_Click(sender As Object, e As EventArgs) Handles btnSave.Click
+        If String.IsNullOrWhiteSpace(id.Text) Or String.IsNullOrWhiteSpace(tbDate.Value.Date) Or String.IsNullOrWhiteSpace(tbCname.Text) Or String.IsNullOrWhiteSpace(tbVname.Text) Or String.IsNullOrWhiteSpace(tbSname.Text) Or String.IsNullOrWhiteSpace(tbWname.Text) _
+         Or String.IsNullOrWhiteSpace(tbAgreement.Text) Or String.IsNullOrWhiteSpace(tbOffice.Text) Or String.IsNullOrWhiteSpace(tbLocation.Text) Then
+            MessageBox.Show("Enter complete data first!")
+        Else
+            Try
+                updates("UPDATE agreement SET agreementDate = '" & tbDate.Value.Date.ToString("yyyy/MM/dd") & "', complainant = '" & tbCname.Text _
+                & "', victim = '" & tbVname.Text & "', suspect = '" & tbSname.Text & "', witness= '" & tbWname.Text & "', agreement =  '" & tbAgreement.Text _
+                & "', officeName = '" & tbOffice.Text & "', agreementLocation =  '" & tbLocation.Text & "'")
+
+                MessageBox.Show("Agreement Record Updated!")
+
+            Catch ex As Exception
+                MessageBox.Show("Error, you must complete details" & ex.Message.ToString)
+            Finally
+
+            End Try
+        End If
+    End Sub
 End Class

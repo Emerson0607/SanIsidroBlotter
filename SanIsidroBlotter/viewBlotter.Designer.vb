@@ -116,11 +116,12 @@ Partial Class viewBlotter
         '
         Me.vGender.Cursor = System.Windows.Forms.Cursors.Hand
         Me.vGender.Enabled = False
+        Me.vGender.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!)
         Me.vGender.FormattingEnabled = True
         Me.vGender.Items.AddRange(New Object() {"Male", "Female"})
         Me.vGender.Location = New System.Drawing.Point(561, 57)
         Me.vGender.Name = "vGender"
-        Me.vGender.Size = New System.Drawing.Size(238, 31)
+        Me.vGender.Size = New System.Drawing.Size(238, 26)
         Me.vGender.TabIndex = 0
         '
         'Label16
@@ -268,7 +269,7 @@ Partial Class viewBlotter
         Me.sContactNumber.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.sContactNumber.Cursor = System.Windows.Forms.Cursors.Hand
         Me.sContactNumber.Enabled = False
-        Me.sContactNumber.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.0!)
+        Me.sContactNumber.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!)
         Me.sContactNumber.Location = New System.Drawing.Point(23, 133)
         Me.sContactNumber.Multiline = True
         Me.sContactNumber.Name = "sContactNumber"
@@ -290,11 +291,11 @@ Partial Class viewBlotter
         Me.sBday.Cursor = System.Windows.Forms.Cursors.Hand
         Me.sBday.CustomFormat = "MM/dd/yyyy"
         Me.sBday.Enabled = False
-        Me.sBday.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.07563!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.sBday.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!)
         Me.sBday.Format = System.Windows.Forms.DateTimePickerFormat.Custom
         Me.sBday.Location = New System.Drawing.Point(828, 67)
         Me.sBday.Name = "sBday"
-        Me.sBday.Size = New System.Drawing.Size(246, 25)
+        Me.sBday.Size = New System.Drawing.Size(246, 24)
         Me.sBday.TabIndex = 11
         Me.sBday.Value = New Date(2022, 11, 19, 16, 8, 18, 0)
         '
@@ -333,6 +334,7 @@ Partial Class viewBlotter
         Me.numberCall.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.numberCall.Cursor = System.Windows.Forms.Cursors.Hand
         Me.numberCall.Enabled = False
+        Me.numberCall.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!)
         Me.numberCall.Location = New System.Drawing.Point(561, 136)
         Me.numberCall.Multiline = True
         Me.numberCall.Name = "numberCall"
@@ -344,6 +346,7 @@ Partial Class viewBlotter
         Me.incidentDetails.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.incidentDetails.Cursor = System.Windows.Forms.Cursors.Hand
         Me.incidentDetails.Enabled = False
+        Me.incidentDetails.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!)
         Me.incidentDetails.Location = New System.Drawing.Point(287, 136)
         Me.incidentDetails.Multiline = True
         Me.incidentDetails.Name = "incidentDetails"
@@ -355,6 +358,7 @@ Partial Class viewBlotter
         Me.incidentLocation.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.incidentLocation.Cursor = System.Windows.Forms.Cursors.Hand
         Me.incidentLocation.Enabled = False
+        Me.incidentLocation.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!)
         Me.incidentLocation.Location = New System.Drawing.Point(26, 136)
         Me.incidentLocation.Multiline = True
         Me.incidentLocation.Name = "incidentLocation"
@@ -366,11 +370,11 @@ Partial Class viewBlotter
         Me.incidentDT.Cursor = System.Windows.Forms.Cursors.Hand
         Me.incidentDT.CustomFormat = "MM/dd/yyyy"
         Me.incidentDT.Enabled = False
-        Me.incidentDT.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.07563!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.incidentDT.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!)
         Me.incidentDT.Format = System.Windows.Forms.DateTimePickerFormat.Custom
         Me.incidentDT.Location = New System.Drawing.Point(829, 72)
         Me.incidentDT.Name = "incidentDT"
-        Me.incidentDT.Size = New System.Drawing.Size(246, 25)
+        Me.incidentDT.Size = New System.Drawing.Size(246, 24)
         Me.incidentDT.TabIndex = 11
         Me.incidentDT.Value = New Date(2022, 11, 19, 16, 8, 18, 0)
         '
@@ -389,6 +393,7 @@ Partial Class viewBlotter
         Me.incidentType.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.incidentType.Cursor = System.Windows.Forms.Cursors.Hand
         Me.incidentType.Enabled = False
+        Me.incidentType.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!)
         Me.incidentType.Location = New System.Drawing.Point(561, 72)
         Me.incidentType.Multiline = True
         Me.incidentType.Name = "incidentType"
@@ -400,11 +405,11 @@ Partial Class viewBlotter
         Me.reportDate.Cursor = System.Windows.Forms.Cursors.Hand
         Me.reportDate.CustomFormat = "MM/dd/yyyy"
         Me.reportDate.Enabled = False
-        Me.reportDate.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.07563!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.reportDate.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!)
         Me.reportDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom
         Me.reportDate.Location = New System.Drawing.Point(287, 73)
         Me.reportDate.Name = "reportDate"
-        Me.reportDate.Size = New System.Drawing.Size(245, 25)
+        Me.reportDate.Size = New System.Drawing.Size(245, 24)
         Me.reportDate.TabIndex = 11
         Me.reportDate.Value = New Date(2022, 11, 19, 0, 0, 0, 0)
         '
@@ -456,6 +461,7 @@ Partial Class viewBlotter
         Me.vContactNumber.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.vContactNumber.Cursor = System.Windows.Forms.Cursors.Hand
         Me.vContactNumber.Enabled = False
+        Me.vContactNumber.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!)
         Me.vContactNumber.Location = New System.Drawing.Point(23, 131)
         Me.vContactNumber.Multiline = True
         Me.vContactNumber.Name = "vContactNumber"
@@ -467,6 +473,7 @@ Partial Class viewBlotter
         Me.vAddress.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.vAddress.Cursor = System.Windows.Forms.Cursors.Hand
         Me.vAddress.Enabled = False
+        Me.vAddress.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!)
         Me.vAddress.Location = New System.Drawing.Point(286, 131)
         Me.vAddress.Multiline = True
         Me.vAddress.Name = "vAddress"
@@ -478,11 +485,11 @@ Partial Class viewBlotter
         Me.vBday.Cursor = System.Windows.Forms.Cursors.Hand
         Me.vBday.CustomFormat = "MM/dd/yyyy"
         Me.vBday.Enabled = False
-        Me.vBday.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.07563!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.vBday.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!)
         Me.vBday.Format = System.Windows.Forms.DateTimePickerFormat.Custom
         Me.vBday.Location = New System.Drawing.Point(828, 59)
         Me.vBday.Name = "vBday"
-        Me.vBday.Size = New System.Drawing.Size(246, 25)
+        Me.vBday.Size = New System.Drawing.Size(246, 24)
         Me.vBday.TabIndex = 11
         Me.vBday.Value = New Date(2022, 11, 19, 16, 8, 18, 0)
         '
@@ -491,6 +498,7 @@ Partial Class viewBlotter
         Me.vCitizenship.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.vCitizenship.Cursor = System.Windows.Forms.Cursors.Hand
         Me.vCitizenship.Enabled = False
+        Me.vCitizenship.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!)
         Me.vCitizenship.Location = New System.Drawing.Point(286, 57)
         Me.vCitizenship.Multiline = True
         Me.vCitizenship.Name = "vCitizenship"
@@ -502,6 +510,7 @@ Partial Class viewBlotter
         Me.vFullname.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.vFullname.Cursor = System.Windows.Forms.Cursors.Hand
         Me.vFullname.Enabled = False
+        Me.vFullname.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!)
         Me.vFullname.Location = New System.Drawing.Point(23, 57)
         Me.vFullname.Multiline = True
         Me.vFullname.Name = "vFullname"
@@ -513,6 +522,7 @@ Partial Class viewBlotter
         Me.id.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.id.Cursor = System.Windows.Forms.Cursors.Hand
         Me.id.Enabled = False
+        Me.id.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!)
         Me.id.Location = New System.Drawing.Point(26, 72)
         Me.id.Multiline = True
         Me.id.Name = "id"
@@ -557,6 +567,7 @@ Partial Class viewBlotter
         Me.sAddress.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.sAddress.Cursor = System.Windows.Forms.Cursors.Hand
         Me.sAddress.Enabled = False
+        Me.sAddress.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!)
         Me.sAddress.Location = New System.Drawing.Point(286, 133)
         Me.sAddress.Multiline = True
         Me.sAddress.Name = "sAddress"
@@ -567,11 +578,12 @@ Partial Class viewBlotter
         '
         Me.sGender.Cursor = System.Windows.Forms.Cursors.Hand
         Me.sGender.Enabled = False
+        Me.sGender.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!)
         Me.sGender.FormattingEnabled = True
         Me.sGender.Items.AddRange(New Object() {"Male", "Female"})
         Me.sGender.Location = New System.Drawing.Point(561, 66)
         Me.sGender.Name = "sGender"
-        Me.sGender.Size = New System.Drawing.Size(238, 31)
+        Me.sGender.Size = New System.Drawing.Size(238, 26)
         Me.sGender.TabIndex = 0
         '
         'sCitizenship
@@ -579,6 +591,7 @@ Partial Class viewBlotter
         Me.sCitizenship.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.sCitizenship.Cursor = System.Windows.Forms.Cursors.Hand
         Me.sCitizenship.Enabled = False
+        Me.sCitizenship.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!)
         Me.sCitizenship.Location = New System.Drawing.Point(286, 67)
         Me.sCitizenship.Multiline = True
         Me.sCitizenship.Name = "sCitizenship"
@@ -590,6 +603,7 @@ Partial Class viewBlotter
         Me.sFullname.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.sFullname.Cursor = System.Windows.Forms.Cursors.Hand
         Me.sFullname.Enabled = False
+        Me.sFullname.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!)
         Me.sFullname.Location = New System.Drawing.Point(23, 67)
         Me.sFullname.Multiline = True
         Me.sFullname.Name = "sFullname"
@@ -624,6 +638,7 @@ Partial Class viewBlotter
         Me.cAddress.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.cAddress.Cursor = System.Windows.Forms.Cursors.Hand
         Me.cAddress.Enabled = False
+        Me.cAddress.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!)
         Me.cAddress.Location = New System.Drawing.Point(286, 131)
         Me.cAddress.Multiline = True
         Me.cAddress.Name = "cAddress"
@@ -635,6 +650,7 @@ Partial Class viewBlotter
         Me.cContactNumber.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.cContactNumber.Cursor = System.Windows.Forms.Cursors.Hand
         Me.cContactNumber.Enabled = False
+        Me.cContactNumber.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!)
         Me.cContactNumber.Location = New System.Drawing.Point(26, 131)
         Me.cContactNumber.Multiline = True
         Me.cContactNumber.Name = "cContactNumber"
@@ -646,11 +662,11 @@ Partial Class viewBlotter
         Me.cbDay.Cursor = System.Windows.Forms.Cursors.Hand
         Me.cbDay.CustomFormat = "MM/dd/yyyy"
         Me.cbDay.Enabled = False
-        Me.cbDay.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.07563!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cbDay.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!)
         Me.cbDay.Format = System.Windows.Forms.DateTimePickerFormat.Custom
         Me.cbDay.Location = New System.Drawing.Point(829, 64)
         Me.cbDay.Name = "cbDay"
-        Me.cbDay.Size = New System.Drawing.Size(246, 25)
+        Me.cbDay.Size = New System.Drawing.Size(246, 24)
         Me.cbDay.TabIndex = 11
         Me.cbDay.Value = New Date(2022, 11, 19, 16, 8, 18, 0)
         '
@@ -658,11 +674,12 @@ Partial Class viewBlotter
         '
         Me.cGender.Cursor = System.Windows.Forms.Cursors.Hand
         Me.cGender.Enabled = False
+        Me.cGender.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!)
         Me.cGender.FormattingEnabled = True
         Me.cGender.Items.AddRange(New Object() {"Male", "Female"})
         Me.cGender.Location = New System.Drawing.Point(564, 63)
         Me.cGender.Name = "cGender"
-        Me.cGender.Size = New System.Drawing.Size(235, 31)
+        Me.cGender.Size = New System.Drawing.Size(235, 26)
         Me.cGender.TabIndex = 0
         '
         'cCitizenship
@@ -670,6 +687,7 @@ Partial Class viewBlotter
         Me.cCitizenship.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.cCitizenship.Cursor = System.Windows.Forms.Cursors.Hand
         Me.cCitizenship.Enabled = False
+        Me.cCitizenship.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!)
         Me.cCitizenship.Location = New System.Drawing.Point(287, 64)
         Me.cCitizenship.Multiline = True
         Me.cCitizenship.Name = "cCitizenship"
@@ -681,6 +699,7 @@ Partial Class viewBlotter
         Me.cFullname.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.cFullname.Cursor = System.Windows.Forms.Cursors.Hand
         Me.cFullname.Enabled = False
+        Me.cFullname.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!)
         Me.cFullname.Location = New System.Drawing.Point(26, 64)
         Me.cFullname.Multiline = True
         Me.cFullname.Name = "cFullname"

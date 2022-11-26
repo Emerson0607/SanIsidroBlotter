@@ -77,6 +77,7 @@ Partial Class register
         Me.tbOldPassword.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.tbOldPassword.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.tbOldPassword.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.tbOldPassword.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!)
         Me.tbOldPassword.Location = New System.Drawing.Point(380, 179)
         Me.tbOldPassword.Multiline = True
         Me.tbOldPassword.Name = "tbOldPassword"
@@ -89,6 +90,7 @@ Partial Class register
         Me.tbUsername.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.tbUsername.Cursor = System.Windows.Forms.Cursors.Hand
         Me.tbUsername.Enabled = False
+        Me.tbUsername.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!)
         Me.tbUsername.Location = New System.Drawing.Point(380, 117)
         Me.tbUsername.Multiline = True
         Me.tbUsername.Name = "tbUsername"
@@ -102,6 +104,7 @@ Partial Class register
         Me.tbNewPassword.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.tbNewPassword.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.tbNewPassword.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.tbNewPassword.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!)
         Me.tbNewPassword.Location = New System.Drawing.Point(380, 242)
         Me.tbNewPassword.Multiline = True
         Me.tbNewPassword.Name = "tbNewPassword"

@@ -92,7 +92,7 @@ Module Module1
                 .columns(2).headertext = "Complainant"
                 .columns(3).headertext = "Victim"
                 .columns(4).headertext = "Suspect"
-                .columns(5).headertext = "witness"
+                .columns(5).headertext = "Witness"
                 .Columns(0).Width = 40
                 .Columns(1).Width = 60
                 .Columns(2).Width = 60

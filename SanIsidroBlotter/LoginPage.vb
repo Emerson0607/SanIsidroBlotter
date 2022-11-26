@@ -28,10 +28,15 @@ Public Class LoginPage
                     tbUsername.Clear()
                     tbPassword.Clear()
 
+                    'Me.Hide()
+                    'Dim MainForm As New MenuPage
+                    'MainForm.Show()
+                    ''MainForm.Show()    '//it shows the parent form also
+
                     Me.Hide()
                     Dim MainForm As New MenuPage
-                    MainForm.Show()
-                    'MainForm.Show()    '//it shows the parent form also
+                    MainForm.ShowDialog()
+                    Me.Show()
 
                 End If
 
@@ -56,7 +61,8 @@ Public Class LoginPage
         Me.Hide()
         Dim MainForm As New register
         MainForm.ShowDialog()
-        'MainForm.Show()    '//it shows the parent form also
+
         Me.Show()
+        'MainForm.Show()    '//it shows the parent form also
     End Sub
 End Class

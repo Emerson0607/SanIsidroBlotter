@@ -49,6 +49,7 @@ Partial Class CreateAgree
         Me.tbCname.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.tbCname.Cursor = System.Windows.Forms.Cursors.Hand
         Me.tbCname.Enabled = False
+        Me.tbCname.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!)
         Me.tbCname.Location = New System.Drawing.Point(41, 213)
         Me.tbCname.Multiline = True
         Me.tbCname.Name = "tbCname"
@@ -59,6 +60,7 @@ Partial Class CreateAgree
         '
         Me.tbAgreement.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.tbAgreement.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.tbAgreement.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!)
         Me.tbAgreement.Location = New System.Drawing.Point(41, 330)
         Me.tbAgreement.Multiline = True
         Me.tbAgreement.Name = "tbAgreement"
@@ -100,6 +102,7 @@ Partial Class CreateAgree
         Me.tbVname.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.tbVname.Cursor = System.Windows.Forms.Cursors.Hand
         Me.tbVname.Enabled = False
+        Me.tbVname.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!)
         Me.tbVname.Location = New System.Drawing.Point(308, 213)
         Me.tbVname.Multiline = True
         Me.tbVname.Name = "tbVname"
@@ -121,6 +124,7 @@ Partial Class CreateAgree
         Me.tbSname.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.tbSname.Cursor = System.Windows.Forms.Cursors.Hand
         Me.tbSname.Enabled = False
+        Me.tbSname.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!)
         Me.tbSname.Location = New System.Drawing.Point(589, 213)
         Me.tbSname.Multiline = True
         Me.tbSname.Name = "tbSname"
@@ -141,6 +145,7 @@ Partial Class CreateAgree
         '
         Me.tbWname.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.tbWname.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.tbWname.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!)
         Me.tbWname.Location = New System.Drawing.Point(852, 213)
         Me.tbWname.Multiline = True
         Me.tbWname.Name = "tbWname"
@@ -161,6 +166,7 @@ Partial Class CreateAgree
         '
         Me.tbOffice.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.tbOffice.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.tbOffice.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!)
         Me.tbOffice.Location = New System.Drawing.Point(852, 104)
         Me.tbOffice.Multiline = True
         Me.tbOffice.Name = "tbOffice"
@@ -181,6 +187,7 @@ Partial Class CreateAgree
         '
         Me.tbLocation.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.tbLocation.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.tbLocation.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!)
         Me.tbLocation.Location = New System.Drawing.Point(589, 104)
         Me.tbLocation.Multiline = True
         Me.tbLocation.Name = "tbLocation"
@@ -237,7 +244,7 @@ Partial Class CreateAgree
         Me.tbDate.CalendarMonthBackground = System.Drawing.Color.White
         Me.tbDate.Cursor = System.Windows.Forms.Cursors.Hand
         Me.tbDate.CustomFormat = "yyyy/MM/dd"
-        Me.tbDate.Font = New System.Drawing.Font("Verdana", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tbDate.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!)
         Me.tbDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom
         Me.tbDate.Location = New System.Drawing.Point(302, 105)
         Me.tbDate.Margin = New System.Windows.Forms.Padding(4)
@@ -253,7 +260,7 @@ Partial Class CreateAgree
         Me.id.BackColor = System.Drawing.Color.Gainsboro
         Me.id.Cursor = System.Windows.Forms.Cursors.Hand
         Me.id.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.id.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.id.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!)
         Me.id.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.id.FormattingEnabled = True
         Me.id.Location = New System.Drawing.Point(42, 107)

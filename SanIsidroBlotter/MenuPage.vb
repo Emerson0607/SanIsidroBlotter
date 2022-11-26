@@ -4,7 +4,9 @@
 
         Me.Hide()
         Dim MainForm As New BlotterMenu
-        MainForm.Show()
+        MainForm.ShowDialog()
+        Me.Show()
+
 
 
 
@@ -13,7 +15,6 @@
         Me.Hide()
         Dim MainForm As New AgreeMenu
         MainForm.ShowDialog()
-        'MainForm.Show()    '//it shows the parent form also
         Me.Show()
     End Sub
 
